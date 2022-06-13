@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badge | Cascade UI</title>
+    <!-- css files -->
+    <link href="/css/shared.css" rel="stylesheet" />
+    <link href="/Components/Badge/badge.css" rel="stylesheet" />
+
+    <!-- highlight JS import -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+    />
+
+    <!-- Font awesome icons import -->
+    <script
+      src="https://kit.fontawesome.com/21124ac8ea.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="main-nav">
+      <a class="logo td-none" href="/index.html">Cascade UI</a>
+      <ul class="social-links list-non-bullet nav-btn">
+        <li class="list-item">
+          <a href="" class="link"><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li class="list-item">
+          <a href="" class="link"><i class="fab fa-github"></i></a>
+        </li>
+        <li class="list-item">
+          <a href="" class="link"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- documentation container -->
+
+    <div class="doc-container">
+      <!-- sidebar -->
+      <aside class="sidebar">
+        <!-- get started sidebar -->
+        <div class="nested-list">
+          <div class="list-heading">
+            <a href="">Get Started</a>
+          </div>
+          <ul class="list-sub-heading">
+            <li><a href="/documentation/introduction.html">Introduction</a></li>
+            <li><a href="/documentation/colors.html">Colors</a></li>
+            <li>
+              <a href="/documentation/typography.html">Typography</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Components sidebar -->
+        <div class="nested-list">
+          <div class="list-heading">
+            <a href="">Components</a>
+          </div>
+          <ul class="list-sub-heading">
+            <li>
+              <a  href="/Components/avatar/avatar.html">Avatar</a>
+            </li>
+            <li>
+              <a href="/Components/alert/alert.html">Alert</a>
+            </li>
+            <li>
+              <a class="active" href="/Components/badge/badge.html">Badge</a>
+            </li>
+            <li>
+              <a href="/Components/button/button.html">Button</a>
+            </li>
+            <li>
+              <a href="/Components/card/card.html">Card</a>
+            </li>
+            <li>
+              <a href="/Components/image/image.html">Image</a>
+            </li>
+            <li>
+              <a href="/Components/input/input.html">Input</a>
+            </li>
+            <li>
+              <a href="/Components/text-utilities/text-utilities.html"
+                >Text Utilities</a
+              >
+            </li>
+            <li>
+              <a href="/Components/list/list.html">List</a>
+            </li>
+            <li>
+              <a href="/Components/navigation/navigation.html">Navigation</a>
+            </li>
+            <li>
+              <a href="/Components/modal/modal.html">Modal</a>
+            </li>
+            <li>
+              <a href="/Components/rating/rating.html">Rating</a>
+            </li>
+            <li>
+              <a href="/Components/toast/toast.html">Toast</a>
+            </li>
+            <li>
+              <a href="/Components/grid/grid.html">Simplified Grid</a>
+            </li>
+            <li>
+              <a href="/Components/slider/slider.html">Slider</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Main content -->
+      <div class="maindoc-content">
+        <h1 class="mb-1">Badge</h1>
+        <p>
+            Badge normally appears in proximity to notifications or user avatars, typically displaying unread messages count or status information. In order to only use the Badge Component from
+            <span class="primary-color-shade bold">Cascade UI </span>in your project, copy and paste the below code in the head tag of your html document.
+        </p>
+        
+        <div class="code-snippet">
+            <pre>
+                <code class="language-html">
+    &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/css/foundation.css" /&gt;
+    &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/Components/Badge/badge.css" /&gt;
+                </code>
+            </pre>
+        </div>
+    </p>
+
+        <!-----------------
+        Profile Avatars
+        ------------------->
+        <h3 class="mb-1">Badge on Avatars</h3>
+        <p>Badges indicate the status of the user when used on avatars. Example-> Green: online | Red: Busy | Grey: offline. For using badge on avatars, you can add the class name <span class="primary-color semibold">badge</span> to the parent tag along with the variation class on child, for instance: 
+            <span class="primary-color semibold">badge-online | badge-busy | badge-offline.</span>
+        </p>
+        <div class="comp-showroom comp-badgebox">
+            <div class="badge avatar avatar-lg-size">
+                <img class="rounded-avatar" src="/assets/avatar-male1.jpg">
+                <span class="badge-online"></span>
+            </div>
+            <div class="badge avatar avatar-lg-size">
+                <img class="rounded-avatar" src="/assets/avatar-female2.jpg">
+                <span class="badge-busy"></span>
+            </div>
+            <div class=" badge avatar avatar-lg-size">
+                <img class="rounded-avatar" src="/assets/avatar-male2.jpg">
+                <span class="badge-offline"></span>
+            </div>
+        </div>
+        <div class="code-snippet">
+            <pre>
+                <code class="language-html component-code">
+                    
+                        &lt;div class="badge avatar avatar-lg-size"&gt;
+                            &lt;img class="rounded-avatar" src="/assets/avatar-male1.jpg"&gt;
+                            &lt;span class="badge-online"&gt;&lt;/span&gt;
+                        &lt;/div&gt;
+                        &lt;div class="badge avatar avatar-lg-size"&gt;
+                            &lt;img class="rounded-avatar" src="/assets/avatar-female2.jpg"&gt;
+                            &lt;span class="badge-busy"&gt;&lt;/span&gt;
+                        &lt;/div&gt;
+                        &lt;div class=" badge avatar avatar-lg-size"&gt;
+                            &lt;img class="rounded-avatar" src="/assets/avatar-male2.jpg"&gt;
+                            &lt;span class="badge-offline"&gt;&lt;/span&gt;
+                        &lt;/div&gt;
+                    
+                </code>
+            </pre>
+        </div>
+
+        <!-----------------
+        Badge on Icons
+        ------------------->
+ 
+        <h3 class="mb-1">Badge on Icons</h3>
+        <p>Badges indicate the notification count on a particular item. For using badge on icons, you can add the class name <span class="primary-color semibold">badge</span>
+             to the parent tag along with the <span class="primary-color semibold">badge-number</span> class name on child.</p>
+             <div class="comp-showroom ">
+                <div class="badge avatar avatar-lg-size">
+                    <i class="badge-icon fas fa-shopping-cart"></i>
+                    <div class="badge-number badge-online semibold">2</div>
+                </div>
+                <div class="badge avatar avatar-lg-size">
+                    <i class="badge-icon fas fa-heart"></i>
+                    <div class="badge-number semibold">14</div>
+                </div>
+                <div class="badge avatar avatar-lg-size">
+                    <i class="badge-icon fas fa-envelope"></i>
+                    <div class="badge-number badge-busy semibold">20</div>
+                </div>
+            </div>
+            <div class="code-snippet">
+                <pre>
+                    <code class="language-html component-code">
+                    &lt;div class="badge avatar avatar-lg-size"&gt;
+                        &lt;i class="badge-icon fas fa-shopping-cart"&gt;&lt;/i&gt;
+                        &lt;div class="badge-number badge-online semibold"&gt;2&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="badge avatar avatar-lg-size"&gt;
+                        &lt;i class="badge-icon fas fa-heart"&gt;&lt;/i&gt;
+                        &lt;div class="badge-number semibold"&gt;14&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=" badge avatar avatar-lg-size"&gt;
+                        &lt;i class="badge-icon fas fa-envelope"&gt;&lt;/i&gt;
+                        &lt;div class="badge-number badge-offline semibold"&gt;20&lt;/div&gt;
+                    &lt;/div&gt;
+                    </code>
+                </pre>
+            </div>   
+        
+        
+
+
+        <!-- footer content -->
+        <footer class="semibold">
+          <div class="prev-comp">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--grommet-icons"
+              width="1em"
+              height="1em"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                d="M15 6l-6 6l6 6"
+              ></path>
+            </svg>
+            <a href="/Components/Alert/alert.html">Alert</a>
+          </div>
+
+          <div class="next-comp">
+            <a href="/Components/Button/button.html">Button</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--ic"
+              width="1em"
+              height="1em"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

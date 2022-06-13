@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap");
+
+/* ||| Colors & Font Family */
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  --primary-color: #1e29a3;
+  --primary-color-shade: #5e69df;
+  --accent-color: #5f48c7;
+  --accent-color-shade: #8475c9;
+  --basic-color: #c6c6c6;
+  --basic-color-shade: #c6c6c6d3;
+  --black: #282828;
+  --black-shade: #353535;
+  --black-light-shade: #d9d9d9;
+  --off-white: #f7f7f7;
+  --success: #10a03e;
+  --warning: #f3b749;
+  --info: #aeb9c7;
+  --danger: #f31c1c;
+  --light-green: #8fecad;
+  --light-yellow: #f7d79d;
+  --light-blue: #bed9fa;
+  --light-red: #fabfbf;
+  --gray: #9a9a9a;
+  font-size: 100%;
+}
+/* Text Color */
+
+.primary-color {
+  color: var(--primary-color);
+}
+.primary-color-shade {
+  color: var(--primary-color-shade);
+}
+.gray-color {
+  color: var(--gray);
+}
+
+.white-color {
+  color: white;
+}
+
+/* Background Colors */
+
+.bg-primary-color {
+  background-color: var(--primary-color);
+}
+
+.bg-secondary-color {
+  background-color: var(--primary-color-shade);
+}
+
+.bg-black-color {
+  background-color: var(--black);
+}
+
+.bg-gray-color {
+  background-color: var(--gray);
+}
+
+.bg-success-color {
+  background-color: var(--success);
+}
+
+.bg-danger-color {
+  background-color: var(--danger);
+}
+
+.bg-warning-color {
+  background-color: var(--warning);
+}
+
+.bg-info-color {
+  background-color: var(--info);
+}
+
+/* Light Background Colors */
+
+.bg-light-green-color {
+  background-color: var(--light-green);
+}
+
+.bg-light-red-color {
+  background-color: var(--light-red);
+}
+
+.bg-light-yellow-color {
+  background-color: var(--light-yellow);
+}
+
+.bg-light-blue-color {
+  background-color: var(--light-blue);
+}
+
+.border-black {
+  border: 1px solid var(--black);
+}
+/* ||| Typography */
+
+/* Heading */
+
+h1,
+.h1 {
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+h2,
+.h2 {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h4,
+.h4 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+h5,
+.h5 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+/* paragraphs styling */
+p {
+  line-height: 1.6rem;
+  letter-spacing: 0.9px;
+  font-weight: 500;
+}
+
+/* Text */
+.t3 {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+.t2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.t1p5 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.t1p2 {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+.t1 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.t0p75 {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.t0p5 {
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
+
+.text-strike {
+  text-decoration: line-through;
+}
+
+/* Font Weight */
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.lightbold {
+  font-weight: 500;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* Text Align */
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+/* ||| Spacing */
+
+/* Padding */
+.p-0 {
+  padding: 0;
+}
+
+.p-xs {
+  padding: 0.5rem;
+}
+
+.p-sm {
+  padding: 1rem;
+}
+
+.p-md {
+  padding: 1.5rem;
+}
+
+.p-lg {
+  padding: 2rem;
+}
+
+.p-xl {
+  padding: 2.5rem;
+}
+.p-y {
+  padding: 1rem 0;
+}
+.p-x {
+  padding: 0rem 1rem;
+}
+
+/* Margin */
+.m-0 {
+  margin: 0;
+}
+
+.m-xs {
+  margin: 0.5rem;
+}
+
+.m-sm {
+  margin: 1rem;
+}
+
+.m-md {
+  margin: 1.5rem;
+}
+
+.m-lg {
+  margin: 2rem;
+}
+
+.m-xl {
+  margin: 2.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+.m-y {
+  margin: 1rem 0;
+}
+.m-x {
+  margin: 0rem 1rem;
+}
+/* ||| Border Radius */
+
+.br-sm {
+  border-radius: 5px;
+}
+
+.br-md {
+  border-radius: 10px;
+}
+
+.br-lg {
+  border-radius: 15px;
+}
+
+.br-full {
+  border-radius: 50%;
+}
+
+/* List */
+
+.list-non-bullet {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.list-item {
+  display: inline;
+  padding: 0rem 0.4rem;
+}
+
+.link {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+.td-none {
+  text-decoration: none;
+}
+a:hover {
+  color: var(--primary-color-shade);
+  font-weight: bold;
+}

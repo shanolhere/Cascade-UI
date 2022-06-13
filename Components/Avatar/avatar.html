@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatar | Cascade UI</title>
+    <!-- css files -->
+    <link href="/css/shared.css" rel="stylesheet" />
+    <link href="/Components/Avatar/avatar.css" rel="stylesheet" />
+
+    <!-- highlight JS import -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+    />
+
+    <!-- Font awesome icons import -->
+    <script
+      src="https://kit.fontawesome.com/21124ac8ea.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="main-nav">
+      <a class="logo td-none" href="/index.html">Cascade UI</a>
+      <ul class="social-links list-non-bullet nav-btn">
+        <li class="list-item">
+          <a href="" class="link"><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li class="list-item">
+          <a href="" class="link"><i class="fab fa-github"></i></a>
+        </li>
+        <li class="list-item">
+          <a href="" class="link"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- documentation container -->
+
+    <div class="doc-container">
+      <!-- sidebar -->
+      <aside class="sidebar">
+        <!-- get started sidebar -->
+        <div class="nested-list">
+          <div class="list-heading">
+            <a href="">Get Started</a>
+          </div>
+          <ul class="list-sub-heading">
+            <li><a href="/documentation/introduction.html">Introduction</a></li>
+            <li><a href="/documentation/colors.html">Colors</a></li>
+            <li>
+              <a href="/documentation/typography.html">Typography</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Components sidebar -->
+        <div class="nested-list">
+          <div class="list-heading">
+            <a href="">Components</a>
+          </div>
+          <ul class="list-sub-heading">
+            <li>
+              <a class="active" href="/Components/avatar/avatar.html">Avatar</a>
+            </li>
+            <li>
+              <a href="/Components/alert/alert.html">Alert</a>
+            </li>
+            <li>
+              <a href="/Components/badge/badge.html">Badge</a>
+            </li>
+            <li>
+              <a href="/Components/button/button.html">Button</a>
+            </li>
+            <li>
+              <a href="/Components/card/card.html">Card</a>
+            </li>
+            <li>
+              <a href="/Components/image/image.html">Image</a>
+            </li>
+            <li>
+              <a href="/Components/input/input.html">Input</a>
+            </li>
+            <li>
+              <a href="/Components/text-utilities/text-utilities.html"
+                >Text Utilities</a
+              >
+            </li>
+            <li>
+              <a href="/Components/list/list.html">List</a>
+            </li>
+            <li>
+              <a href="/Components/navigation/navigation.html">Navigation</a>
+            </li>
+            <li>
+              <a href="/Components/modal/modal.html">Modal</a>
+            </li>
+            <li>
+              <a href="/Components/rating/rating.html">Rating</a>
+            </li>
+            <li>
+              <a href="/Components/toast/toast.html">Toast</a>
+            </li>
+            <li>
+              <a href="/Components/grid/grid.html">Simplified Grid</a>
+            </li>
+            <li>
+              <a href="/Components/slider/slider.html">Slider</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Main content -->
+      <div class="maindoc-content">
+        <h1 class="mb-1">Avatar</h1>
+        <p>
+          The Avatar component is used to represent a user, and displays the
+          profile picture, it is found in different shapes and sizes. In order
+          to only use <span class="primary-color-shade bold">Cascade UI</span>'s
+          Avatar component in your project, copy and paste the below code in the
+          head tag of your html document.
+        </p>
+        
+        <div class="code-snippet">
+            <pre>
+                <code class="language-html">
+    &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/css/foundation.css" /&gt;
+    &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/Components/Avatar/avatar.css" /&gt;
+                </code>
+            </pre>
+        </div>
+    </p>
+
+        <!-----------------
+        Profile Avatars
+        ------------------->
+        <h3 class="mb-1">Profile Avatar</h3>
+        <p>You need to include class <span class="primary-color semibold">avatar</span> in the container element. Inside container, you can use image tag and give your own source attribute.</p>
+        <div class="comp-showroom">
+            <div class="avatar">
+                <img src="/assets/avatar-male1.jpg">
+            </div>
+            <div class="avatar">
+                <img src="/assets/avatar-female2.jpg">
+            </div>
+            <div class="avatar">
+                <img src="/assets/avatar-female1.jpg">
+            </div>
+            <div class="avatar">
+                <img src="/assets/avatar-male2.jpg">
+            </div>
+        </div>
+        <div class="code-snippet">
+            <pre>
+                <code class="language-html component-code">
+                    &lt;div class="avatar"&gt;
+                        &lt;img src="/assets/avatar-male1.jpg"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="avatar"&gt;
+                        &lt;img src="/assets/avatar-female2.jpg"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="avatar"&gt;
+                        &lt;img src="/assets/avatar-female1.jpg"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="avatar"&gt;
+                        &lt;img src="/assets/avatar-male2.jpg"&gt;
+                    &lt;/div&gt;
+                </code>
+            </pre>
+        </div>
+
+        <!-- Rounded images -->
+        <h1 class="mb-1">Round Avatar</h1>
+        <p>
+            For round avatars, you can add the class <span class="primary-color-shade bold">rounded-avatar</span>
+            to the image tag along with <span class="primary-color-shade bold">avatar</span> class for container.
+            <span class="primary-color-shade bold">Note: </span> avatar-round class wouldn't work if the image provided is svg.
+        </p>
+        <div class="comp-showroom">
+            <div class="avatar">
+                <img class="rounded-avatar" src="/assets/avatar-male1.jpg">
+            </div>
+            <div class="avatar">
+                <img class="rounded-avatar" src="/assets/avatar-female2.jpg">
+            </div>
+            <div class="avatar">
+                <img class="rounded-avatar" src="/assets/avatar-female1.jpg">
+            </div>
+            <div class="avatar">
+                <img class="rounded-avatar" src="/assets/avatar-male2.jpg">
+            </div>
+        </div>
+
+        <div class="code-snippet">
+            <pre>
+                <code class="language-html component-code">
+                    &lt;div class="avatar"&gt;
+                        &lt;img class="rounded-avatar" src="/assets/avatar-male1.jpg"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="avatar"&gt;
+                        &lt;img class="rounded-avatar" src="/assets/avatar-female2.jpg"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="avatar"&gt;
+                        &lt;img class="rounded-avatar" src="/assets/avatar-female1.jpg"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="avatar"&gt;
+                        &lt;img class="rounded-avatar" src="/assets/avatar-male2.jpg"&gt;
+                    &lt;/div&gt;
+                </code>
+            </pre>
+        </div>
+
+        <!-- Avatar Sizes -->
+        <h1 class="mb-1">Avatar Sizes</h1>
+        <p>
+            For avatars of different sizes, you can add class according to size
+            <span class="primary-color-shade bold"> avatar-lg-size | avatar-md-size | avatar-sm-size | avatar-xs-size (e.g. class="avatar-lg-size")</span>
+        </p>
+
+        <div class="comp-showroom">
+            <div class="avatar-xs-size">
+                <img class="rounded-avatar" src="/assets/avatar-male1.jpg">
+            </div>
+            <div class="avatar-sm-size">
+                <img class="rounded-avatar" src="/assets/avatar-female2.jpg">
+            </div>
+            <div class="avatar-md-size">
+                <img class="rounded-avatar" src="/assets/avatar-female1.jpg">
+            </div>
+            <div class="avatar-lg-size">
+                <img class="rounded-avatar" src="/assets/avatar-male2.jpg">
+            </div>
+        </div>
+        <div class="code-snippet">
+            <pre>
+                <code class="language-html component-code">
+                    &lt;div class="avatar-xs-size"&gt;
+                        &lt;img class="rounded-avatar" src="/assets/avatar-male1.jpg"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="avatar-sm-size"&gt;
+                        &lt;img class="rounded-avatar" src="/assets/avatar-female2.jpg"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="avatar-md-size"&gt;
+                        &lt;img class="rounded-avatar" src="/assets/avatar-female1.jpg"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="avatar-lg-size"&gt;
+                        &lt;img class="rounded-avatar" src="/assets/avatar-male2.jpg"&gt;
+                    &lt;/div&gt;
+                </code>
+            </pre>
+        </div>
+
+
+
+        <!-- footer content -->
+        <footer class="semibold">
+          <div class="prev-comp">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--grommet-icons"
+              width="1em"
+              height="1em"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                d="M15 6l-6 6l6 6"
+              ></path>
+            </svg>
+            <a href="/documentation/typography.html">Typography</a>
+          </div>
+
+          <div class="next-comp">
+            <a href="/Components/Alert/alert.html">Alert</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--ic"
+              width="1em"
+              height="1em"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

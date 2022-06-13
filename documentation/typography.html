@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cascade: Introduction</title>
+    <title>Typography | Cascade UI</title>
     <link href="/css/shared.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -42,9 +42,13 @@
             <a href="">Get Started</a>
           </div>
           <ul class="list-sub-heading">
-            <li><a class="active" href="">Introduction</a></li>
+            <li><a href="">Introduction</a></li>
             <li><a href="/documentation/colors.html">Colors</a></li>
-            <li><a href="/documentation/typography.html">Typography</a></li>
+            <li>
+              <a class="active" href="/documentation/typography.html"
+                >Typography</a
+              >
+            </li>
           </ul>
         </div>
 
@@ -107,68 +111,80 @@
 
       <!-- Main content -->
       <div class="maindoc-content">
-        <h1 class="mb-1">Introduction to Cascade UI</h1>
+        <h1 class="mb-1">Typography</h1>
         <p>
-          <span class="primary-color-shade bold">Cascade UI</span> is a
-          lightweight, robust component library made with clean components. With
-          the help of this, developers can build their projects much
-          <span class="primary-color-shade bold"> faster</span> using
-          pre-defined classes while focussing on functionality rather than
-          designing.
+          <span class="primary-color-shade bold">Cascade UI</span> uses
+          <i>Rubik</i>, as its default font. The typography includes global
+          settings for headings, body text, font weight, and more. Various
+          styles and sizes of text can be created according to their respective
+          class names.
         </p>
-        <h2 class="m-y">Installation Guide</h2>
-        <p>
-          Copy and paste the below code in the head tag of your html document
-          and start using the Blaze UI by just adding class names to your html
-          elements. Read about all the components shipped with Cascade UI.
-        </p>
+        <!-- text variations -->
 
-        <div class="code-snippet installation-code">
-          <pre>
-            <code class="language-html">
-              &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/css/components.css"&gt;
-            </code>
-          </pre>
+        <div class="comp-showroom comp-textbox">
+          <div class="t3">Very Large Text</div>
+          <div class="t2">Large Text</div>
+          <div class="t1p5">Medium Text</div>
+          <div class="t1">Normal Text</div>
+          <div class="t0p75">Small Text</div>
+          <div class="t0p5">Very small text</div>
+          <br />
+          <h1 class="h1">Heading 1</h1>
+          <h2 class="h2">Heading 2</h2>
+          <h3 class="h3">Heading 3</h3>
+          <br />
+          <div class="gray-color">Gray Text</div>
+          <div class="text-strike">Text strike</div>
+          <br />
+          <div class="t1p5 light">Light Weight</div>
+          <div class="t1p5 regular">Regular Weight</div>
+          <div class="t1p5 lightbold">Medium Weight</div>
+          <div class="t1p5 semibold">Semibold Weight</div>
+          <div class="t1p5 bold">Bold Weight</div>
+          <br />
+          <div class="text-left">Left Text</div>
+          <div class="text-center">Centered Text</div>
+          <div class="text-right">RightText</div>
         </div>
 
-        <h2 class="m-y">Customizing Themes</h2>
-        <p>
-          Although cascade UI aims at satisfying it's user's need, as much as
-          possible, There are times, when the pre-defined styles are not
-          sufficient.
-        </p>
-        <p>
-          In order to override Cascade's base classes, users can add their own
-          class to the pre-existing classes, and style them seperately, as shown
-          below.
-        </p>
-
-        <div class="code-snippet installation-code">
+        <div class="code-snippet">
           <pre>
-                  <code class="language-html">
-              &lt;!-- Here "btn-primary" is Cascade UI's class and "user-defined-style" is the class added by user --&gt;
-              <br>
-              &lt;button class="btn-primary user-defined-style"&gt; Customized Button &lt;/button&gt;
-              <br>
-              &lt;!-- Custom class styling --&gt;
-              <br>
-              &lt;style&gt;
-              <br>
-                  .user-defined-style{
+                    <code class="language-html component-code">
+                &lt;!-- Rubik Font Family @credits - Google(https://fonts.google.com/) --&gt;
 
-                      color : white;
+                &lt;!-- @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+                @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap"); --&gt;
 
-                      background-color : slateblue; 
-                  }
-              <br>
-              &lt;/style&gt;
-                  </code>
-              </pre>
+                &lt;div class="t3"&gt;Very Large Text&lt;/div&gt;
+                &lt;div class="t2"&gt;Large Text&lt;/div&gt;
+                &lt;div class="t1p5"&gt;Medium Text&lt;/div&gt;
+                &lt;div class="t1"&gt;Normal Text&lt;/div&gt;
+                &lt;div class="t0p75"&gt;Small Text&lt;/div&gt;
+                &lt;div class="t0p5"&gt;Very small text&lt;/div&gt;
+                
+                &lt;h1 class="h1"&gt;Heading 1&lt;/h1&gt;
+                &lt;h2 class="h2"&gt;Heading 2&lt;/h2&gt;
+                &lt;h3 class="h3"&gt;Heading 3&lt;/h3&gt;
+                
+                &lt;div class="gray-color"&gt;Gray Text&lt;/div&gt;
+                &lt;div class="text-strike"&gt;Text Strike&lt;/div&gt;
+
+                &lt;div class="t1p5 light"&gt;Light Weight&lt;/div&gt;
+                &lt;div class="t1p5 regular"&gt;Regular Weight&lt;/div&gt;
+                &lt;div class="t1p5 lightbold"&gt;Medium Weight&lt;/div&gt;
+                &lt;div class="t1p5 semibold"&gt;Semibold Weight&lt;/div&gt;
+                &lt;div class="t1p5 bold"&gt;Bold Weight&lt;/div&gt;
+                
+                &lt;div class="text-left"&gt;Left Text&lt;/div&gt;
+                &lt;div class="text-center"&gt;Centered Text&lt;/div&gt;
+                &lt;div class="text-right"&gt;Right Text&lt;/div&gt;
+                    </code>
+                </pre>
         </div>
 
         <!-- footer content -->
         <footer class="semibold">
-          <div class="prev-comp disabled">
+          <div class="prev-comp">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -187,11 +203,11 @@
                 d="M15 6l-6 6l6 6"
               ></path>
             </svg>
-            <a href="" disabled>Previous</a>
+            <a href="/documentation/colors.html">Colors</a>
           </div>
 
           <div class="next-comp">
-            <a href="/documentation/colors.html">Colors</a>
+            <a href="/Components/Avatar/avatar.html">Avatar</a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"

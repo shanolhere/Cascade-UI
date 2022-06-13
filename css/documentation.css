@@ -1,0 +1,158 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  height: max-content;
+}
+/* Documentation main container css */
+.doc-container {
+  width: 90%;
+  margin: 2rem auto 0;
+  display: flex;
+  /* background-color: aqua; */
+}
+.maindoc-content {
+  width: 75%;
+  text-align: justify;
+  line-height: 1.4rem;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 160px;
+  margin-right: 6rem;
+  /* background-color: aqua; */
+  /* border: 2px solid red; */
+}
+.list-heading {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--black-light-shade);
+}
+.list-heading a {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+.list-sub-heading {
+  margin: 0.5rem;
+  padding-left: 20px;
+}
+.list-sub-heading .active {
+  color: var(--primary-color-shade);
+  font-weight: 700;
+}
+.list-sub-heading li {
+  padding: 0.6rem 0;
+  transition: all 0.3s ease-in-out;
+}
+/* code snippet styling */
+.code-snippet {
+  height: max-content;
+  /* we dont have to add styles..highlight JS does it all ;) */
+}
+
+.installation-code {
+  margin: 0;
+}
+.hljs {
+  border-radius: 4px;
+}
+
+/* footer styling */
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.prev-comp,
+.next-comp {
+  background-color: var(--primary-color-shade);
+  padding: 8px;
+  border-radius: 10px;
+  color: var(--off-white);
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.prev-comp:hover,
+.next-comp:hover {
+  background-color: var(--primary-color);
+
+  color: var(--off-white);
+}
+.prev-comp a,
+.next-comp a {
+  color: var(--off-white);
+}
+
+.prev-comp a:hover,
+.next-comp a:hover {
+  color: var(--off-white);
+}
+.disabled {
+  background-color: var(--basic-color);
+  cursor: none;
+}
+.disabled:hover {
+  background-color: var(--basic-color);
+  cursor: unset;
+}
+.disabled a:hover {
+  background-color: var(--basic-color);
+}
+/* colors page snippet styling */
+.comp-showroom {
+  /* These two colors are not being used anywhere else, hence no variable */
+  background-color: #f0f0f0;
+  border: 1px solid #b4b4b4;
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.comp-colorbox {
+  background-color: #353535ec;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+.colorbox {
+  width: 6.8rem;
+  height: 6.8rem;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+}
+/* typography page styling */
+.comp-textbox {
+  display: flex;
+  flex-direction: column;
+}
+.comp-alertbox {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+.comp-badgebox {
+  display: flex;
+  flex-direction: row;
+}
+.comp-buttonbox {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 800px) {
+  .sidebar {
+    display: none;
+  }
+
+  .doc-container {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .maindoc-content {
+    width: 100%;
+  }
+}

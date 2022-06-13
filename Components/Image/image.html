@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cascade: Introduction</title>
+    <title>Image| Cascade UI</title>
+    <!-- css files -->
     <link href="/css/shared.css" rel="stylesheet" />
+    <link href="/Components/Image/image.css" rel="stylesheet" />
+
+    <!-- highlight JS import -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
     />
+
+    <!-- Font awesome icons import -->
     <script
       src="https://kit.fontawesome.com/21124ac8ea.js"
       crossorigin="anonymous"
@@ -42,9 +48,11 @@
             <a href="">Get Started</a>
           </div>
           <ul class="list-sub-heading">
-            <li><a class="active" href="">Introduction</a></li>
+            <li><a href="/documentation/introduction.html">Introduction</a></li>
             <li><a href="/documentation/colors.html">Colors</a></li>
-            <li><a href="/documentation/typography.html">Typography</a></li>
+            <li>
+              <a href="/documentation/typography.html">Typography</a>
+            </li>
           </ul>
         </div>
 
@@ -55,13 +63,13 @@
           </div>
           <ul class="list-sub-heading">
             <li>
-              <a href="/Components/avatar/avatar.html">Avatar</a>
+              <a  href="/Components/avatar/avatar.html">Avatar</a>
             </li>
             <li>
               <a href="/Components/alert/alert.html">Alert</a>
             </li>
             <li>
-              <a href="/Components/badge/badge.html">Badge</a>
+              <a  href="/Components/badge/badge.html">Badge</a>
             </li>
             <li>
               <a href="/Components/button/button.html">Button</a>
@@ -70,7 +78,7 @@
               <a href="/Components/card/card.html">Card</a>
             </li>
             <li>
-              <a href="/Components/image/image.html">Image</a>
+              <a class="active" href="/Components/image/image.html">Image</a>
             </li>
             <li>
               <a href="/Components/input/input.html">Input</a>
@@ -107,68 +115,69 @@
 
       <!-- Main content -->
       <div class="maindoc-content">
-        <h1 class="mb-1">Introduction to Cascade UI</h1>
+        <h1 class="mb-1">Image</h1>
         <p>
-          <span class="primary-color-shade bold">Cascade UI</span> is a
-          lightweight, robust component library made with clean components. With
-          the help of this, developers can build their projects much
-          <span class="primary-color-shade bold"> faster</span> using
-          pre-defined classes while focussing on functionality rather than
-          designing.
+            Images are crucial for displaying visual information on an application. In order to only use the Image Component from 
+            <span class="primary-color-shade bold">Cascade UI </span>in your project, copy and paste the below code in the head tag of your html document.
         </p>
-        <h2 class="m-y">Installation Guide</h2>
-        <p>
-          Copy and paste the below code in the head tag of your html document
-          and start using the Blaze UI by just adding class names to your html
-          elements. Read about all the components shipped with Cascade UI.
-        </p>
+        
+        <div class="code-snippet">
+            <pre>
+                <code class="language-html">
+    &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/css/foundation.css" /&gt;
+    &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/Components/Image/image.css" /&gt;
+                </code>
+            </pre>
+        </div>
+    </p>
 
-        <div class="code-snippet installation-code">
-          <pre>
-            <code class="language-html">
-              &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/css/components.css"&gt;
-            </code>
-          </pre>
+        <!-----------------
+        Responsive Image
+        ------------------->
+        <h3 class="mb-1">Responsive Image</h3>
+        <p>Responsive images can be used by applying the class name <span class="primary-color semibold">img-responsive</span>. You can copy the html part from below code snippet.
+        </p>
+        <div class="comp-showroom comp-imagebox">
+            <img src="/assets/image.jpg" class="img-responsive">
+        </div>
+        <div class="code-snippet">
+            <pre>
+                <code class="language-html component-code">
+                    &lt;img src="/assets/image.jpg" class="img-responsive"&gt;
+                    
+                </code>
+            </pre>
         </div>
 
-        <h2 class="m-y">Customizing Themes</h2>
-        <p>
-          Although cascade UI aims at satisfying it's user's need, as much as
-          possible, There are times, when the pre-defined styles are not
-          sufficient.
-        </p>
-        <p>
-          In order to override Cascade's base classes, users can add their own
-          class to the pre-existing classes, and style them seperately, as shown
-          below.
-        </p>
+        <!-----------------
+       Round Image
+        ------------------->
+ 
+            <h3 class="mb-1">Round Image</h3>
+            <p>Round images can be used by applying the class name <span class="primary-color semibold">rounded-img</span>. You can
+                copy the html part from below code snippet.</p>
 
-        <div class="code-snippet installation-code">
-          <pre>
-                  <code class="language-html">
-              &lt;!-- Here "btn-primary" is Cascade UI's class and "user-defined-style" is the class added by user --&gt;
-              <br>
-              &lt;button class="btn-primary user-defined-style"&gt; Customized Button &lt;/button&gt;
-              <br>
-              &lt;!-- Custom class styling --&gt;
-              <br>
-              &lt;style&gt;
-              <br>
-                  .user-defined-style{
+            <div class="comp-showroom comp-showroom-image">
+                <div class="img-container">
+                    <img src="/assets/image.jpg" class="rounded-img">
+                </div>
+            </div>
 
-                      color : white;
+            <div class="code-snippet">
+                <pre>
+                        <code class="language-html component-code">
+                            &lt;div class="img-container"&gt;
+                                &lt;img src="/assets/image.jpg" class="rounded-img"&gt;
+                            &lt;/div&gt;
+                        </code>
+                    </pre>
+            </div>
+        
 
-                      background-color : slateblue; 
-                  }
-              <br>
-              &lt;/style&gt;
-                  </code>
-              </pre>
-        </div>
-
+        
         <!-- footer content -->
         <footer class="semibold">
-          <div class="prev-comp disabled">
+          <div class="prev-comp">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -187,11 +196,11 @@
                 d="M15 6l-6 6l6 6"
               ></path>
             </svg>
-            <a href="" disabled>Previous</a>
+            <a href="/Components/Card/card.html">Card</a>
           </div>
 
           <div class="next-comp">
-            <a href="/documentation/colors.html">Colors</a>
+            <a href="/Components/Input/input.html">Input</a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"

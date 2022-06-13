@@ -1,0 +1,85 @@
+.btn-primary {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: white;
+}
+.btn-outline {
+  border: 2px solid var(--primary-color);
+  background-color: white;
+  color: var(--black);
+  font-weight: 600;
+}
+.btn-primary:hover {
+  cursor: pointer;
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+}
+.btn-danger {
+  background-color: var(--danger);
+}
+.btn-icon {
+  border: none;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-icon:hover {
+  cursor: pointer;
+}
+
+.btn-icon-txt {
+  padding: 0.5rem 1.5rem;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+}
+
+.icon-in-btn {
+  font-size: 1.5rem;
+}
+.btn-icon.btn-outline {
+  border-radius: 5px;
+  padding: 5px;
+}
+/* btn link styling */
+.btn-link {
+  border: none;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.btn-link.btn-primary {
+  color: white;
+}
+/* btn floating icons styling */
+.btn-float {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+.btn-float:hover {
+  cursor: pointer;
+}
+.btn-float-icon {
+  color: white;
+}
+.comp-buttonbox > .btn-outline {
+  border: 2px solid var(--primary-color);
+  background-color: white;
+  color: var(--black);
+}
+.btn-float.btn-accent {
+  background-color: var(--accent-color);
+}

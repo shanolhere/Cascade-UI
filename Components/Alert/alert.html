@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alert | Cascade UI</title>
+    <!-- css files -->
+    <link href="/css/shared.css" rel="stylesheet" />
+    <link href="/Components/Alert/alert.css" rel="stylesheet" />
+
+    <!-- highlight JS import -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+    />
+
+    <!-- Font awesome icons import -->
+    <script
+      src="https://kit.fontawesome.com/21124ac8ea.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="main-nav">
+      <a class="logo td-none" href="/index.html">Cascade UI</a>
+      <ul class="social-links list-non-bullet nav-btn">
+        <li class="list-item">
+          <a href="" class="link"><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li class="list-item">
+          <a href="" class="link"><i class="fab fa-github"></i></a>
+        </li>
+        <li class="list-item">
+          <a href="" class="link"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- documentation container -->
+
+    <div class="doc-container">
+      <!-- sidebar -->
+      <aside class="sidebar">
+        <!-- get started sidebar -->
+        <div class="nested-list">
+          <div class="list-heading">
+            <a href="">Get Started</a>
+          </div>
+          <ul class="list-sub-heading">
+            <li><a href="/documentation/introduction.html">Introduction</a></li>
+            <li><a href="/documentation/colors.html">Colors</a></li>
+            <li>
+              <a href="/documentation/typography.html">Typography</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Components sidebar -->
+        <div class="nested-list">
+          <div class="list-heading">
+            <a href="">Components</a>
+          </div>
+          <ul class="list-sub-heading">
+            <li>
+              <a  href="/Components/avatar/avatar.html">Avatar</a>
+            </li>
+            <li>
+              <a class="active" href="/Components/alert/alert.html">Alert</a>
+            </li>
+            <li>
+              <a href="/Components/badge/badge.html">Badge</a>
+            </li>
+            <li>
+              <a href="/Components/button/button.html">Button</a>
+            </li>
+            <li>
+              <a href="/Components/card/card.html">Card</a>
+            </li>
+            <li>
+              <a href="/Components/image/image.html">Image</a>
+            </li>
+            <li>
+              <a href="/Components/input/input.html">Input</a>
+            </li>
+            <li>
+              <a href="/Components/text-utilities/text-utilities.html"
+                >Text Utilities</a
+              >
+            </li>
+            <li>
+              <a href="/Components/list/list.html">List</a>
+            </li>
+            <li>
+              <a href="/Components/navigation/navigation.html">Navigation</a>
+            </li>
+            <li>
+              <a href="/Components/modal/modal.html">Modal</a>
+            </li>
+            <li>
+              <a href="/Components/rating/rating.html">Rating</a>
+            </li>
+            <li>
+              <a href="/Components/toast/toast.html">Toast</a>
+            </li>
+            <li>
+              <a href="/Components/grid/grid.html">Simplified Grid</a>
+            </li>
+            <li>
+              <a href="/Components/slider/slider.html">Slider</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Main content -->
+      <div class="maindoc-content">
+        <h1 class="mb-1">Alert</h1>
+        <p>
+            Alerts are used to communicate important information by attracting user's attention without interrupting the user's flow. In order to only use the Alert Component from 
+            <span class="primary-color-shade bold">Cascade UI </span>in your project, copy and paste the below code in the head tag of your html document.
+        </p>
+        
+        <div class="code-snippet">
+            <pre>
+                <code class="language-html">
+    &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/css/foundation.css" /&gt;
+    &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/Components/Alert/alert.css" /&gt;
+                </code>
+            </pre>
+        </div>
+    </p>
+
+        <!-----------------
+        Profile Avatars
+        ------------------->
+        <h3 class="mb-1">Simple Alert</h3>
+        <p>To use this alert you just need to add class name <span class="primary-color semibold">alert</span> followed by varient name:
+            <span class="primary-color semibold">alert-success, alert-warning, alert-info, alert-error</span> (eg. class="alert alert-success"). You can copy the html part from below code snippet.
+        </p>
+        <div class="comp-showroom comp-alertbox">
+            <div class="alert alert-success">
+                Success! Profile has been updated successfully.
+            </div>
+            <div class="alert alert-warning">
+                Warning! Low disk storage, clear some space.
+            </div>
+            <div class="alert alert-info">
+                Update! An update is available to install.
+            </div>
+            <div class="alert alert-error">
+                Error! We encountered an error while processing your request.
+            </div>
+        </div>
+        <div class="code-snippet">
+            <pre>
+                <code class="language-html component-code">
+                    &lt;div class="alert alert-success"&gt;
+                                Success! Profile has been updated successfully.
+                            &lt;/div&gt;
+                            &lt;div class="alert alert-warning"&gt;
+                                Warning! Low disk storage, clear some space.
+                            &lt;/div&gt;
+                            &lt;div class="alert alert-info"&gt;
+                                Update! An update is available to install.
+                            &lt;/div&gt;
+                            &lt;div class="alert alert-error"&gt;
+                                Error! We encountered an error while processing your request.
+                            &lt;/div&gt;
+                </code>
+            </pre>
+        </div>
+
+        <!-----------------
+        Profile Avatars with icons
+        ------------------->
+ 
+        <h3 class="mb-1">Icon Alert</h3>
+        <p>To use the alert with an icon you just need to add class name <span class="primary-color semibold">alert-icon</span> along with the <span class="primary-color semibold">alert</span>
+            class, followed by varient name: <span class="primary-color semibold">alert-success, alert-warning, alert-info,
+                alert-error</span> (eg. class="alert alert-icon alert-success").<br><br>
+            If you want to use the same icon as below, you will need to add this highlighted link to the head tag of
+            your html document: <span class="primary-color semibold">@import
+                url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');</span>
+            (Credits: font-awesome). Alternatively, you can use any other icons of your choice also.<br><br>
+            You can copy the html part from below code snippet.</p>
+
+        
+        <div class="comp-showroom comp-alertbox">
+            <div class="alert alert-icon alert-success">
+                <i class="fas fa-check-circle"></i> Profile has been updated successfully.
+            </div>
+            <div class="alert alert-icon alert-warning">
+                <i class="fas fa-exclamation-circle"></i> Low disk storage, clear some space.
+            </div>
+            <div class="alert alert-icon alert-info">
+                <i class="fas fa-question-circle"></i>  An update is available to install.
+            </div>
+            <div class="alert alert-icon alert-error">
+                <i class="fas fa-times-circle"></i> We encountered an error while processing your request.
+            </div>
+        </div>
+        <div class="code-snippet">
+            <pre>
+                    <code class="language-html component-code">
+                        &lt;div class="alert alert-icon alert-success"&gt;
+                            &lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Profile has been updated successfully!
+                        &lt;/div&gt;
+                        &lt;div class="alert alert-icon alert-warning"&gt;
+                            &lt;i class="fas fa-exclamation-circle"&gt;&lt;/i&gt; Low disk storage, clear some space!
+                        &lt;/div&gt;
+                        &lt;div class="alert alert-icon alert-info"&gt;
+                            &lt;i class="fas fa-question-circle"&gt;&lt;/i&gt; An update is available to install!
+                        &lt;/div&gt;
+                        &lt;div class="alert alert-icon alert-error"&gt;
+                            &lt;i class="fas fa-times-circle"&gt;&lt;/i&gt; We encountered an error while processing your request!
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+        </div>
+
+
+        <!-- footer content -->
+        <footer class="semibold">
+          <div class="prev-comp">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--grommet-icons"
+              width="1em"
+              height="1em"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                d="M15 6l-6 6l6 6"
+              ></path>
+            </svg>
+            <a href="/Components/Avatar/avatar.html">Avatar</a>
+          </div>
+
+          <div class="next-comp">
+            <a href="/Components/Badge/badge.html">Badge</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--ic"
+              width="1em"
+              height="1em"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

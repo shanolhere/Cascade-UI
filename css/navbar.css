@@ -1,0 +1,23 @@
+.main-nav {
+  padding: 0.6rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  /* background: var(--primary-color-shade); */
+  color: #fff;
+  font-size: 1.5rem;
+  box-shadow: 2px 3px 3px var(--black-light-shade);
+}
+nav .logo {
+  font-size: 2rem;
+  font-style: bold;
+}
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+@media screen and (max-width: 800px) {
+  .nav-btn .link {
+    padding: 0;
+  }
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cascade: Introduction</title>
+    <title>Colors| Cascade UI</title>
     <link href="/css/shared.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -42,8 +42,10 @@
             <a href="">Get Started</a>
           </div>
           <ul class="list-sub-heading">
-            <li><a class="active" href="">Introduction</a></li>
-            <li><a href="/documentation/colors.html">Colors</a></li>
+            <li><a href="/documentation/introduction.html">Introduction</a></li>
+            <li>
+              <a class="active" href="/documentation/colors.html">Colors</a>
+            </li>
             <li><a href="/documentation/typography.html">Typography</a></li>
           </ul>
         </div>
@@ -107,68 +109,80 @@
 
       <!-- Main content -->
       <div class="maindoc-content">
-        <h1 class="mb-1">Introduction to Cascade UI</h1>
+        <h1 class="mb-1">Colors in Cascade UI</h1>
         <p>
-          <span class="primary-color-shade bold">Cascade UI</span> is a
-          lightweight, robust component library made with clean components. With
-          the help of this, developers can build their projects much
-          <span class="primary-color-shade bold"> faster</span> using
-          pre-defined classes while focussing on functionality rather than
-          designing.
+          <span class="primary-color-shade bold">Cascade UI</span> comes with
+          pre-defined colors, which are
+          <span class="primary-color-shade bold"> soft on eyes</span>
+          and consistent in nature. These colors can be accessed by pre-defined
+          classes.
         </p>
-        <h2 class="m-y">Installation Guide</h2>
+        <h2 class="m-y">Default Palette</h2>
         <p>
-          Copy and paste the below code in the head tag of your html document
-          and start using the Blaze UI by just adding class names to your html
-          elements. Read about all the components shipped with Cascade UI.
+          Below is the color palette, used by
+          <span class="primary-color-shade bold">Cascade UI</span>, listed with
+          the hex-codes.
         </p>
 
-        <div class="code-snippet installation-code">
-          <pre>
-            <code class="language-html">
-              &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/css/components.css"&gt;
-            </code>
-          </pre>
+        <div class="comp-showroom comp-colorbox">
+          <div class="colorbox bg-primary-color white-color">
+            Primary color<br /><br />
+            #1e29a3
+          </div>
+          <div class="colorbox bg-secondary-color white-color">
+            Secondary color<br /><br />
+            #5e69df
+          </div>
+          <div class="colorbox bg-black-color white-color">
+            Black color<br /><br />
+            #282828
+          </div>
+          <div class="colorbox bg-gray-color white-color">
+            Gray color<br /><br />
+            #9a9a9a
+          </div>
+          <div class="colorbox bg-success-color white-color">
+            Success color<br /><br />
+            #10a03e
+          </div>
+          <div class="colorbox bg-danger-color white-color">
+            Danger color<br /><br />
+            #f31c1c
+          </div>
+          <div class="colorbox bg-warning-color white-color">
+            Warning color<br /><br />
+            #f3b749
+          </div>
+          <div class="colorbox bg-info-color white-color">
+            Info color<br /><br />
+            #aeb9c7
+          </div>
         </div>
-
-        <h2 class="m-y">Customizing Themes</h2>
-        <p>
-          Although cascade UI aims at satisfying it's user's need, as much as
-          possible, There are times, when the pre-defined styles are not
-          sufficient.
-        </p>
-        <p>
-          In order to override Cascade's base classes, users can add their own
-          class to the pre-existing classes, and style them seperately, as shown
-          below.
-        </p>
-
-        <div class="code-snippet installation-code">
-          <pre>
-                  <code class="language-html">
-              &lt;!-- Here "btn-primary" is Cascade UI's class and "user-defined-style" is the class added by user --&gt;
-              <br>
-              &lt;button class="btn-primary user-defined-style"&gt; Customized Button &lt;/button&gt;
-              <br>
-              &lt;!-- Custom class styling --&gt;
-              <br>
-              &lt;style&gt;
-              <br>
-                  .user-defined-style{
-
-                      color : white;
-
-                      background-color : slateblue; 
-                  }
-              <br>
-              &lt;/style&gt;
-                  </code>
-              </pre>
+        <h2 class="m-y">Utility classes for colors</h2>
+        <div class="comp-showroom comp-colorbox">
+          <div class="colorbox bg-primary-color white-color">
+            .bg-primary-color
+          </div>
+          <div class="colorbox bg-secondary-color white-color">
+            .bg-secondary-color
+          </div>
+          <div class="colorbox bg-black-color white-color">.bg-black-color</div>
+          <div class="colorbox bg-gray-color white-color">.bg-gray-color</div>
+          <div class="colorbox bg-success-color white-color">
+            .bg-success-color
+          </div>
+          <div class="colorbox bg-danger-color white-color">
+            .bg-danger-color
+          </div>
+          <div class="colorbox bg-warning-color white-color">
+            .bg-warning-color
+          </div>
+          <div class="colorbox bg-info-color white-color">.bg-info-color</div>
         </div>
 
         <!-- footer content -->
         <footer class="semibold">
-          <div class="prev-comp disabled">
+          <div class="prev-comp">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -187,11 +201,11 @@
                 d="M15 6l-6 6l6 6"
               ></path>
             </svg>
-            <a href="" disabled>Previous</a>
+            <a href="/documentation/introduction.html">Introduction</a>
           </div>
 
           <div class="next-comp">
-            <a href="/documentation/colors.html">Colors</a>
+            <a href="/documentation/typography.html">Typography</a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"

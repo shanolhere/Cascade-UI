@@ -1,0 +1,21 @@
+.avatar {
+  width: 3rem;
+}
+.rounded-avatar {
+  border-radius: 50%;
+}
+.avatar-xs-size {
+  width: 2rem;
+}
+
+.avatar-sm-size {
+  width: 3rem;
+}
+
+.avatar-md-size {
+  width: 4rem;
+}
+
+.avatar-lg-size {
+  width: 5rem;
+}
