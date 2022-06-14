@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card | Cascade UI</title>
+    <!-- css files -->
+    <link href="/css/shared.css" rel="stylesheet" />
+    <link href="/Components/Card/card.css" rel="stylesheet">
+    <link href="/Components/Image/image.css" rel="stylesheet">
+    <link href="/Components/Button/button.css" rel="stylesheet">
+
+    <!-- highlight JS import -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+    />
+
+    <!-- Font awesome icons import -->
+    <script
+      src="https://kit.fontawesome.com/21124ac8ea.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="main-nav">
+      <a class="logo td-none" href="/index.html">Cascade UI</a>
+      <ul class="social-links list-non-bullet nav-btn">
+        <li class="list-item">
+          <a href="" class="link"><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li class="list-item">
+          <a href="" class="link"><i class="fab fa-github"></i></a>
+        </li>
+        <li class="list-item">
+          <a href="" class="link"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- documentation container -->
+
+    <div class="doc-container">
+      <!-- sidebar -->
+      <aside class="sidebar">
+        <!-- get started sidebar -->
+        <div class="nested-list">
+          <div class="list-heading">
+            <a href="">Get Started</a>
+          </div>
+          <ul class="list-sub-heading">
+            <li><a href="/documentation/introduction.html">Introduction</a></li>
+            <li><a href="/documentation/colors.html">Colors</a></li>
+            <li>
+              <a href="/documentation/typography.html">Typography</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Components sidebar -->
+        <div class="nested-list">
+          <div class="list-heading">
+            <a href="">Components</a>
+          </div>
+          <ul class="list-sub-heading">
+            <li>
+              <a  href="/Components/avatar/avatar.html">Avatar</a>
+            </li>
+            <li>
+              <a href="/Components/alert/alert.html">Alert</a>
+            </li>
+            <li>
+              <a  href="/Components/badge/badge.html">Badge</a>
+            </li>
+            <li>
+              <a href="/Components/button/button.html">Button</a>
+            </li>
+            <li>
+              <a class="active" href="/Components/card/card.html">Card</a>
+            </li>
+            <li>
+              <a href="/Components/image/image.html">Image</a>
+            </li>
+            <li>
+              <a href="/Components/input/input.html">Input</a>
+            </li>
+            <li>
+              <a href="/Components/text-utilities/text-utilities.html"
+                >Text Utilities</a
+              >
+            </li>
+            <li>
+              <a href="/Components/list/list.html">List</a>
+            </li>
+            <li>
+              <a href="/Components/navigation/navigation.html">Navigation</a>
+            </li>
+            <li>
+              <a href="/Components/modal/modal.html">Modal</a>
+            </li>
+            <li>
+              <a href="/Components/rating/rating.html">Rating</a>
+            </li>
+            <li>
+              <a href="/Components/toast/toast.html">Toast</a>
+            </li>
+            <li>
+              <a href="/Components/grid/grid.html">Simplified Grid</a>
+            </li>
+            <li>
+              <a href="/Components/slider/slider.html">Slider</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Main content -->
+      <div class="maindoc-content">
+        <h1 class="mb-1">Card</h1>
+        <p>
+            A card is a group of related information, generally comprising of an Image, headers and footers, a wide variety of content, and sometimes also has a call to action button. In order to only use the Button Component from  
+            <span class="primary-color-shade bold">Cascade UI </span>in your project, copy and paste the below code in the head tag of your html document.
+        </p>
+        
+        <div class="code-snippet">
+            <pre>
+                <code class="language-html">
+            &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/css/foundation.css" /&gt;
+            &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/Components/Image/image.css" /&gt;
+            &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/Components/Button/button.css" /&gt;
+            &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/Components/Card/card.css" /&gt;
+                </code>
+            </pre>
+        </div>
+    </p>
+
+        <!-----------------
+        Card with Badge
+        ------------------->
+        <h3 class="mb-1">Card with Badge</h3>
+        <p>This card has a badge on the top-left corner. To use the Card with Badge you just need to add class name <span class="primary-color semibold">card-badge</span>. You can copy the html part from below code snippet.
+        </p>
+        <div class="comp-showroom">
+            <div class="card-badge card-shadow">
+                <div class="card-header">
+                    <img class="img-responsive" src="/assets/denim jacket.jpg" alt="Denim jacket" />
+                    <div class="badge-in-card">
+                        TRENDING
+                    </div>
+                    <div class="card-floating-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="card-header-txt">
+                        <h3 class="card-title semibold">Denim Jacket</h3>
+                        <small class="gray-color">Accessories</small>
+                        <div class="card-price">
+                            <span class="final-price t1p5 lightbold">₹599/-</span>
+                            <span class="initial-price text-strike">₹499/-</span>
+                            <span class="discount primary-color">Save ₹400 (30%)</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-primary card-btn">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+        <div class="code-snippet">
+            <pre>
+                <code class="language-html component-code">
+                    &lt;div class="card-badge"&gt;
+                        &lt;div class="card-header"&gt;
+                            &lt;img class="img-responsive" src="/assets/denim jacket.jpg" alt="Denim jacket"" /&gt;
+                            &lt;div class="badge-in-card"&gt;
+                                TRENDING
+                            &lt;/div&gt;
+                            &lt;div class="card-floating-icon"&gt;
+                                &lt;i class="far fa-heart"&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;div class="card-header-txt"&gt;
+                                &lt;h3 class="semibold"&gt;Denim jacket"&lt;/h3&gt;
+                                &lt;small class="gray-color"&gt;Accessories&lt;/small&gt;
+                                &lt;div class="card-price"&gt;
+                                    &lt;span class="final-price t1p5 lightbold"&gt;₹599/-&lt;/span&gt;
+                                    &lt;span class="initial-price text-strike"&gt;₹999/-&lt;/span&gt;
+                                    &lt;span class="discount primary-color"&gt;Save ₹400 (30%)&lt;/span&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt; 
+                        &lt;/div&gt;
+                        &lt;button class="btn-primary card-btn"&gt;
+                            Add to Cart
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                </code>
+            </pre>
+        </div>
+
+        <!-----------------
+       Card with Text Overlay
+        ------------------->
+ 
+            <h3 class="mb-1">Card with Text Overlay</h3>
+            <p>This card has a text overlay on top of it. To use the Card with Text Overlay you can copy the html from below code snippet.
+
+            </p>
+
+            <div class="comp-showroom">
+                <div class="card-badge card-txt-overlay">
+                    <div class="card-header">
+                        <img class="img-responsive" src="/assets/denim jacket.jpg" alt="Denim Jacket" />
+                        <div class="badge-in-card">
+                            TRENDING
+                        </div>
+                        <div class="card-floating-icon">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="card-header-txt">
+                            <h3 class="card-title semibold">Denim Jacket</h3>
+                            <small class="gray-color">Accessories</small>
+                            <div class="card-price">
+                                <span class="final-price t1p5 lightbold">₹599/-</span>
+                                <span class="initial-price text-strike">₹999/-</span>
+                                <span class="discount primary-color">Save ₹400 (30%)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-primary card-btn">
+                        Add to Cart
+                    </button>
+                    <div class="overlay-msg t2 lightbold">Out of Stock</div>
+                </div>
+            </div>
+
+            <div class="code-snippet">
+                <pre>
+                        <code class="language-html component-code">
+                    &lt;div class="card-badge card-txt-overlay"&gt;
+                        &lt;div class="card-header"&gt;
+                            &lt;img class="img-responsive" src="/assets/denim jacket.jpg" alt="Denim Jacket" /&gt;
+                            &lt;div class="badge-in-card"&gt;
+                                TRENDING
+                            &lt;/div&gt;
+                            &lt;div class="card-floating-icon"&gt;
+                                &lt;i class="far fa-heart"&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;div class="card-header-txt"&gt;
+                                &lt;h3 class="semibold"&gt;Denim Jacket&lt;/h3&gt;
+                                &lt;small class="gray-color"&gt;Accessories&lt;/small&gt;
+                                &lt;div class="card-price"&gt;
+                                    &lt;span class="final-price t1p5 lightbold"&gt;₹599/-&lt;/span&gt;
+                                    &lt;span class="initial-price text-strike"&gt;₹999/-&lt;/span&gt;
+                                    &lt;span class="discount primary-color"&gt;Save ₹400 (30%)&lt;/span&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;button class="btn-primary card-btn"&gt;
+                            Add to Cart
+                        &lt;/button&gt;
+                        &lt;div class="overlay-msg t2 lightbold"&gt;Out of Stock&lt;/div&gt;
+                    &lt;/div&gt;
+                        </code>
+                    </pre>
+            </div>
+
+             <!-----------------
+                Horizontal Card
+                ------------------->
+            <h3 class="mb-1">Horizontal Card</h3>
+            <p>The horizontal card is completely responsive, as it turns into a vertical card on devices with small
+                screens. To use this card, you just need to add class name <span class="primary-color semibold">card-horizontal</span>.
+                You can copy the html part from below code snippet.</p>
+    
+            <div class="comp-showroom">
+                <div class="card-horizontal card-shadow">
+                    <div class="img-in-horizontal">
+                        <img class="img-responsive" src="/assets/denim jacket.jpg" alt="Denim Jacket" />
+                    </div>
+                    <div class="card-header">
+                        <div class="card-header-txt">
+                            <h3 class="card-title semibold">Denim Jacket</h3>
+                            <small class="gray-color">Accessories</small>
+                            <div class="card-price">
+                                <span class="final-price t1p5 lightbold">₹599/-</span>
+                                <span class="initial-price text-strike">₹999/-</span>
+                                <span class="discount primary-color">Save ₹400 (30%)</span>
+                            </div>
+                        </div>
+                        <button class="btn-primary card-btn">
+                            Add to Cart
+                        </button>
+                        <button class="btn-primary btn-outline card-btn">
+                            Save to Wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="code-snippet">
+                <pre>
+                        <code class="language-html component-code">
+                    &lt;div class="card-horizontal"&gt;
+                        &lt;div class="img-in-horizontal"&gt;
+                            &lt;img class="img-responsive" src="/assets/denim jacket.jpg" alt="Denim Jacket" /&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card-header"&gt;
+                            &lt;div class="card-header-txt"&gt;
+                                &lt;h3 class="semibold"&gt;Denim Jacket&lt;/h3&gt;
+                                &lt;small class="gray-color"&gt;Accessories&lt;/small&gt;
+                                &lt;div class="card-price"&gt;
+                                    &lt;span class="final-price t1p5 lightbold"&gt;₹599/-&lt;/span&gt;
+                                    &lt;span class="initial-price text-strike"&gt;₹999/-&lt;/span&gt;
+                                    &lt;span class="discount primary-color"&gt;Save ₹400 (30%)&lt;/span&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;button class="btn-primary card-btn"&gt;
+                                Add to Cart
+                            &lt;/button&gt;
+                            &lt;button class="btn-primary btn-outline card-btn"&gt;
+                                Save to Wishlist
+                            &lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                        </code>
+                    </pre>
+            </div>
+
+            <!-----------------
+                Text only Card
+                ------------------->
+            <h3 class="mb-1">Text only Card</h3>
+            <p>Text only card includes a title and a paragraph text. To use the this card you just need to add class
+                name <span class="primary-color semibold">card-txt-only</span>.
+                You can copy the html part from below code snippet.</p>
+
+            <div class="comp-showroom">
+                <div class="card-txt-only">
+                    <h4>Card Title</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ratione. 
+                        Nemo sint, ut quasi dolore ducimus consectetur ratione expedita non?</p>
+                </div>
+                <!-- Second Variation for Text Only Card -->
+                <div class="card-txt-only">
+                    <h4>Card Title</h4>
+                    <small>Sub-Title</small>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Sequi, inventore quis nobis quod illo distinctio iste est recusandae voluptatem mollitia.</p>
+                </div>
+            </div>
+
+            <div class="code-snippet">
+                <pre>
+                        <code class="language-html component-code">
+                    &lt;div class="card-txt-only"&gt;
+                        &lt;h4&gt;Card Title&lt;/h4&gt;
+                        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Alias, ratione. Nemo sint, ut quasi dolore ducimus consectetur ratione expedita non?&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;!-- Second Variation for Text Only Card --&gt;
+                    &lt;div class="card-txt-only"&gt;
+                        &lt;h4&gt;Card Title&lt;/h4&gt;
+                        &lt;small&gt;Sub-Title&lt;/small&gt;
+                        &lt;p&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Sequi, inventore quis nobis quod illo distinctio iste est recusandae voluptatem mollitia.&lt;/p&gt;
+                    &lt;/div&gt;
+                        </code>
+                    </pre>
+            </div>
+           
+             <!-----------------
+                Card with Dismiss
+                ------------------->
+                <h3 class="mb-1">Card with Dismiss</h3>
+                <p>Card with Dismiss includes a icon on top right corner which acts as a dismiss button. To use the this
+                    card you just need to add class name <span class="primary-color semibold">card-dismiss</span>.
+                    You can copy the html part from below code snippet.</p>
+    
+                <div class="comp-showroom">
+                    <div class="card-dismiss">
+                        <h4>Card Title</h4>
+                        <i class="fas fa-times"></i>
+                        <small>Sub-Title</small>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic ipsam minus nostrum itaque labore.</p>
+                    </div>
+                </div>
+    
+                <div class="code-snippet">
+                    <pre>
+                        <code class="language-html component-code">
+                            &lt;div class="card-dismiss"&gt;
+                                &lt;h4&gt;Card Title&lt;/h4&gt;
+                                &lt;i class="fas fa-times"&gt;&lt;/i&gt;
+                                &lt;small&gt;Sub-Title&lt;/small&gt;
+                                &lt;p&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Aperiam hic ipsam minus nostrum itaque labore.&lt;/p&gt;
+                            &lt;/div&gt;
+                            </code>
+                        </pre>
+                </div>
+    
+                 <!-----------------
+                Card with Shadow
+                ------------------->
+            <h3 class="mb-1">Card with Shadow</h3>
+            <p>This card has a very nice elevated effect due to shadow. To have this shadow effect in your card, you
+                just need to add class name <span class="primary-color semibold">card-shadow</span> along with any other type of
+                card.
+                You can copy the html part from below code snippet.</p>
+
+            <div class="comp-showroom">
+                <div class="card-badge card-shadow">
+                    <div class="card-header">
+                        <img class="img-responsive" src="/assets/denim jacket.jpg" alt="Denim Jacket" />
+                        <div class="badge-in-card">
+                            TRENDING
+                        </div>
+                        <div class="card-floating-icon">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="card-header-txt">
+                            <h3 class="card-title semibold">Denim Jacket</h3>
+                            <small class="gray-color">Accessories</small>
+                            <div class="card-price">
+                                <span class="final-price t1p5 lightbold">₹599/-</span>
+                                <span class="initial-price text-strike">₹999/-</span>
+                                <span class="discount primary-color">Save ₹400 (30%)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-primary card-btn">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="code-snippet">
+                <pre>
+                        <code class="language-html component-code">
+                    &lt;div class="card-badge card-shadow"&gt;
+                        &lt;div class="card-header"&gt;
+                            &lt;img class="img-responsive" src="/assets/denim jacket.jpg" alt="Denim Jacket" /&gt;
+                            &lt;div class="badge-in-card"&gt;
+                                TRENDING
+                            &lt;/div&gt;
+                            &lt;div class="card-floating-icon"&gt;
+                                &lt;i class="far fa-heart"&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;div class="card-header-txt"&gt;
+                                &lt;h3 class="semibold"&gt;Denim Jacket&lt;/h3&gt;
+                                &lt;small class="gray-color"&gt;Accessories&lt;/small&gt;
+                                &lt;div class="card-price"&gt;
+                                    &lt;span class="final-price t1p5 lightbold"&gt;₹599/-&lt;/span&gt;
+                                    &lt;span class="initial-price text-strike"&gt;₹999/-&lt;/span&gt;
+                                    &lt;span class="discount primary-color"&gt;Save ₹400 (30%)&lt;/span&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt; 
+                        &lt;/div&gt;
+                        &lt;button class="btn-primary card-btn"&gt;
+                            Add to Cart
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                        </code>
+                    </pre>
+            </div>
+        
+
+        
+        <!-- footer content -->
+        <footer class="semibold">
+          <div class="prev-comp">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--grommet-icons"
+              width="1em"
+              height="1em"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                d="M15 6l-6 6l6 6"
+              ></path>
+            </svg>
+            <a href="/Components/Button/button.html">Button</a>
+          </div>
+
+          <div class="next-comp">
+            <a href="/Components/Image/image.html">Image</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--ic"
+              width="1em"
+              height="1em"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
