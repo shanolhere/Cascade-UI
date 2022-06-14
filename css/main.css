@@ -16,7 +16,7 @@ body {
 html {
   scroll-behavior: smooth;
   background-image: linear-gradient(to bottom right, #21254e, #8278da);
-  height: 100vh;
+  height: max-height;
 }
 .container {
   margin: 2rem 4rem;
@@ -100,9 +100,9 @@ nav a {
     font-size: 19px;
   }
   nav {
-    font-size: 16px;
+    font-size: 15px;
     display: inline;
-
+    margin-left: 14px;
     padding-bottom: 2px;
     /* box-shadow: 2px 2px 2px #050505; */
   }
@@ -156,7 +156,10 @@ nav a {
     font-size: 19px;
   }
   nav {
-    font-size: 16px;
+    font-size: 15px;
+
+    margin-left: 14px;
+
     display: flex;
     justify-content: space-between;
 
@@ -213,6 +216,9 @@ nav a {
     font-size: 19px;
   }
   nav {
+    font-size: 15px;
+
+    margin-left: 14px;
     font-size: 16px;
     display: flex;
     justify-content: space-between;

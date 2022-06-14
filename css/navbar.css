@@ -20,4 +20,15 @@ nav a {
   .nav-btn .link {
     padding: 0;
   }
+
+  nav ul {
+    display: flex;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+  }
+  nav .logo {
+    font-size: 1.8rem;
+    font-style: bold;
+    margin-left: -2rem;
+  }
 }
