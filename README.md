@@ -129,5 +129,5 @@ _Note: Please describe the component/changes you have made in your pull request.
 
 ## **Developer**
 
-- **Portfolio** - [Tarandeep Singh](https://sabiya.netlify.app/)
-- **Twitter** - [@Tarandeep_s1ngh](https://twitter.com/nerd_fswd)
+- **Portfolio** - [PortfolioLink](https://sabiya.netlify.app/)
+- **Twitter** - [TwitterLink](https://twitter.com/nerd_fswd)
