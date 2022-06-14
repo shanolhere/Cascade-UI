@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image| Cascade UI</title>
+    <title>Navigation | Cascade UI</title>
     <!-- css files -->
     <link href="/css/shared.css" rel="stylesheet" />
-    <link href="/Components/Image/image.css" rel="stylesheet" />
+    <link href="/Components/Navigation/navigation.css" rel="stylesheet" />
+    <link href="/Components/Avatar/avatar.css" rel="stylesheet" />
 
     <!-- highlight JS import -->
     <link
@@ -78,21 +79,21 @@
               <a href="/Components/card/card.html">Card</a>
             </li>
             <li>
-              <a class="active" href="/Components/image/image.html">Image</a>
+              <a href="/Components/image/image.html">Image</a>
             </li>
             <li>
-              <a href="/Components/input/input.html">Input</a>
+              <a  href="/Components/input/input.html">Input</a>
             </li>
             <li>
-              <a href="/Components/text-utilities/text-utilities.html"
+              <a  href="/Components/text-utilities/text-utilities.html"
                 >Text Utilities</a
               >
             </li>
             <li>
-              <a href="/Components/list/list.html">List</a>
+              <a  href="/Components/list/list.html">List</a>
             </li>
             <li>
-              <a href="/Components/navigation/navigation.html">Navigation</a>
+              <a class="active" href="/Components/navigation/navigation.html">Navigation</a>
             </li>
             <li>
               <a href="/Components/modal/modal.html">Modal</a>
@@ -115,65 +116,58 @@
 
       <!-- Main content -->
       <div class="maindoc-content">
-        <h1 class="mb-1">Image</h1>
-        <p>
-            Images are crucial for displaying visual information on an application. In order to only use the Image Component from 
-            <span class="primary-color-shade bold">Cascade UI </span>in your project, copy and paste the below code in the head tag of your html document.
-        </p>
+        <h2 class="mb-1">Navigation</h2>
+            <p>Navigation bar is used to navigate through the website. This navigation component is responsive, it turns into a hamburger menu in medium and small devices. In order to only use the List Component from
+                 <span class="primary-color semibold">Cascade UI</span> in your project, copy and paste the below code in the head tag of your html document.
         
         <div class="code-snippet">
             <pre>
                 <code class="language-html">
     &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/css/foundation.css" /&gt;
-    &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/Components/Image/image.css" /&gt;
+    &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/Components/Navigation/navigation.css" /&gt;
                 </code>
             </pre>
         </div>
     </p>
 
         <!-----------------
-        Responsive Image
+        Simple Navigation
         ------------------->
-        <h3 class="mb-1">Responsive Image</h3>
-        <p>Responsive images can be used by applying the class name <span class="primary-color semibold">img-responsive</span>. You can copy the html part from below code snippet.
+        <h1 class="mb-1">Simple Navigation</h1>
+        <p>
+            This navigation component is responsive, it turns into a hamburger menu in medium and small devices. To use this you just need to add class name  
+            <span class="primary-color-shade bold">nav-bar </span>followed by sub classes shown below. You can copy the html part from below code snippet.
         </p>
-        <div class="comp-showroom comp-imagebox">
-            <img src="/assets/image.jpg" class="img-responsive">
+
+        <div class="comp-showroom">
+            <nav class="nav-bar">
+                <div class="nav-text">
+                    <i class="nav-logo fab fa-weibo"></i>MyWebsite 
+                </div>
+                <div class="nav-icons">
+                    <button class="nav-icon"><i class="fa-solid fa-user"></i></button>
+                    <button class="nav-icon"><i class="fa-solid fa-heart"></i></button>
+                    <button class="nav-icon"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="nav-icon nav-hamburger"><i class="fas fa-bars"></i></button>
+               </div>
+            </nav>
         </div>
+
         <div class="code-snippet">
             <pre>
-                <code class="language-html component-code">
-                    &lt;img src="/assets/image.jpg" class="img-responsive"&gt;
-                    
-                </code>
-            </pre>
+                    <code class="language-html component-code">
+                &lt;nav class="nav-bar"&gt;
+                    &lt;div class="nav-txt"&gt;&lt;i class="nav-logo fab fa-drupal"&gt;&lt;/i&gt;MyWebsite&lt;/div&gt;
+                    &lt;button class="icon-in-nav"&gt;&lt;i class="fa-solid fa-user"&gt;&lt;/i&gt;&lt;/button&gt;
+                    &lt;button class="icon-in-nav"&gt;&lt;i class="fa-solid fa-heart"&gt;&lt;/i&gt;&lt;/button&gt;
+                    &lt;button class="icon-in-nav"&gt;&lt;i class="fa-solid fa-cart-shopping"&gt;&lt;/i&gt;&lt;/button&gt;
+                    &lt;button class="icon-in-nav nav-hamburger"&gt;&lt;i class="fas fa-bars"&gt;&lt;/i&gt;&lt;/button&gt;
+                &lt;/nav&gt;
+                    </code>
+                </pre>
         </div>
 
-        <!-----------------
-       Round Image
-        ------------------->
- 
-            <h3 class="mb-1">Round Image</h3>
-            <p>Round images can be used by applying the class name <span class="primary-color semibold">rounded-img</span>. You can
-                copy the html part from below code snippet.</p>
-
-            <div class="comp-showroom comp-imagebox">
-                <div class="img-container">
-                    <img src="/assets/image.jpg" class="rounded-img">
-                </div>
-            </div>
-
-            <div class="code-snippet">
-                <pre>
-                        <code class="language-html component-code">
-                            &lt;div class="img-container"&gt;
-                                &lt;img src="/assets/image.jpg" class="rounded-img"&gt;
-                            &lt;/div&gt;
-                        </code>
-                    </pre>
-            </div>
         
-
         
         <!-- footer content -->
         <footer class="semibold">
@@ -196,11 +190,11 @@
                 d="M15 6l-6 6l6 6"
               ></path>
             </svg>
-            <a href="/Components/Card/card.html">Card</a>
+            <a href="/Components/List/list.html">List</a>
           </div>
 
           <div class="next-comp">
-            <a href="/Components/Input/input.html">Input</a>
+            <a href="/Components/Modal/modal.html">Modal</a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"

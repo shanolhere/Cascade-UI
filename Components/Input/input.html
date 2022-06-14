@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image| Cascade UI</title>
+    <title>Input| Cascade UI</title>
     <!-- css files -->
     <link href="/css/shared.css" rel="stylesheet" />
-    <link href="/Components/Image/image.css" rel="stylesheet" />
+    <link href="/Components/Input/input.css" rel="stylesheet" />
 
     <!-- highlight JS import -->
     <link
@@ -78,10 +78,10 @@
               <a href="/Components/card/card.html">Card</a>
             </li>
             <li>
-              <a class="active" href="/Components/image/image.html">Image</a>
+              <a href="/Components/image/image.html">Image</a>
             </li>
             <li>
-              <a href="/Components/input/input.html">Input</a>
+              <a class="active" href="/Components/input/input.html">Input</a>
             </li>
             <li>
               <a href="/Components/text-utilities/text-utilities.html"
@@ -115,9 +115,9 @@
 
       <!-- Main content -->
       <div class="maindoc-content">
-        <h1 class="mb-1">Image</h1>
+        <h1 class="mb-1">Input</h1>
         <p>
-            Images are crucial for displaying visual information on an application. In order to only use the Image Component from 
+            Inputs are used to get information from the user. Keyboard and mouse can be used for providing or changing data. In order to only use the Input Component from 
             <span class="primary-color-shade bold">Cascade UI </span>in your project, copy and paste the below code in the head tag of your html document.
         </p>
         
@@ -125,50 +125,96 @@
             <pre>
                 <code class="language-html">
     &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/css/foundation.css" /&gt;
-    &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/Components/Image/image.css" /&gt;
+    &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/Components/Input/input.css" /&gt;
                 </code>
             </pre>
         </div>
     </p>
 
         <!-----------------
-        Responsive Image
+        Primary Input
         ------------------->
-        <h3 class="mb-1">Responsive Image</h3>
-        <p>Responsive images can be used by applying the class name <span class="primary-color semibold">img-responsive</span>. You can copy the html part from below code snippet.
+        <h3 class="mb-1">Primary Input</h3>
+        <p>Primary Inputs include textarea input, text input, number input and password input. These can be used by applying the class name <span class="primary-color semibold">input-primary</span> to the parent container. You can copy the html part from below code snippet.
         </p>
-        <div class="comp-showroom comp-imagebox">
-            <img src="/assets/image.jpg" class="img-responsive">
+        <div class="comp-showroom comp-inputbox">
+            <div class="input-primary">
+                <label>Textarea *</label>
+                <textarea row="4" col="10" placeholder="Write something here..."></textarea>
+            </div>
+            <div class="input-primary">
+                <label>Username *</label>
+                <input type="name" placeholder="Enter username">
+            </div>
+            <div class="input-primary">
+                <label>Number *</label>
+                <input type="number" placeholder="Enter number">
+            </div>
+            <div class="input-primary">
+                <label>Password *</label>
+                <input type="password" placeholder="Enter password">
+            </div>
         </div>
         <div class="code-snippet">
             <pre>
                 <code class="language-html component-code">
-                    &lt;img src="/assets/image.jpg" class="img-responsive"&gt;
+                    &lt;div class="input-primary"&gt;
+                        &lt;label&gt;Textarea *&lt;/label&gt;
+                        &lt;textarea row="4" col="10" placeholder="Write something here..."&gt;&lt;/textarea&gt;
+                    &lt;/div&gt;
+                    &lt;div class="input-primary"&gt;
+                        &lt;label&gt;Username *&lt;/label&gt;
+                        &lt;input type="name" placeholder="Enter username"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="input-primary"&gt;
+                        &lt;label&gt;Number *&lt;/label&gt;
+                        &lt;input type="number" placeholder="Enter number"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="input-primary"&gt;
+                        &lt;label&gt;Password *&lt;/label&gt;
+                        &lt;input type="password" placeholder="Enter password"&gt;
+                    &lt;/div&gt;
                     
                 </code>
             </pre>
         </div>
 
         <!-----------------
-       Round Image
+       Input validation
         ------------------->
  
-            <h3 class="mb-1">Round Image</h3>
-            <p>Round images can be used by applying the class name <span class="primary-color semibold">rounded-img</span>. You can
+            <h3 class="mb-1">Input validation</h3>
+            <p>Validation is done while user enters the input. This can be implemented by applying the class name  <span class="primary-color semibold">input-validation</span>. You can
                 copy the html part from below code snippet.</p>
 
-            <div class="comp-showroom comp-imagebox">
-                <div class="img-container">
-                    <img src="/assets/image.jpg" class="rounded-img">
-                </div>
+            <div class="comp-showroom">
+                <form action="" class="input-validation" novalidate>
+                    <label for="username">Username *</label>
+                    <input type="text" placeholder="Enter Username" required />
+
+                    <label for="email-input">Email *</label>
+                    <input type="email" placeholder="Enter Email" required />
+
+                    <label for="password">Password *</label>
+                    <input type="password" class="error-pwd" placeholder="Enter Password" required />
+                    <div class="error-msg">Password must be atleast 8 characters long!</div>
+                </form>
             </div>
 
             <div class="code-snippet">
                 <pre>
                         <code class="language-html component-code">
-                            &lt;div class="img-container"&gt;
-                                &lt;img src="/assets/image.jpg" class="rounded-img"&gt;
-                            &lt;/div&gt;
+                        &lt;form action="" class="input-validation" novalidate&gt;
+                            &lt;label for="username"&gt;Username *&lt;/label&gt;
+                            &lt;input type="text" placeholder="Enter Username" required /&gt;
+    
+                            &lt;label for="email-input"&gt;Email *&lt;/label&gt;
+                            &lt;input type="email" placeholder="Enter Email" required /&gt;
+    
+                            &lt;label for="password"&gt;Password *&lt;/label&gt;
+                            &lt;input type="password" class="error-psw" placeholder="Enter Password" required /&gt;
+                            &lt;div class="error-msg"&gt;Password must be atleast 8 characters long!&lt;/div&gt;
+                        &lt;/form&gt;
                         </code>
                     </pre>
             </div>
@@ -196,11 +242,11 @@
                 d="M15 6l-6 6l6 6"
               ></path>
             </svg>
-            <a href="/Components/Card/card.html">Card</a>
+            <a href="/Components/Image/image.html">Image</a>
           </div>
 
           <div class="next-comp">
-            <a href="/Components/Input/input.html">Input</a>
+            <a href="/Components/Text-utilities/text-utilities.html">Text Utilities</a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"

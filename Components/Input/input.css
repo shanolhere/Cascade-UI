@@ -1,0 +1,39 @@
+.input-primary {
+  display: flex;
+  flex-direction: column;
+}
+.input-primary textarea,
+input {
+  border: 2px solid var(--black);
+  padding: 10px;
+  border-radius: 5px;
+}
+.input-primary textarea:hover,
+input:hover {
+  background-color: var(--off-white);
+}
+
+/* input-validation styling */
+.input-validation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--basic-color-shade);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.input-validation input:hover {
+  background-color: var(--off-white);
+}
+.error-msg {
+  color: red;
+  margin-top: 0.2rem;
+}
+.input-validation input:valid {
+  background-color: var(--light-green);
+}
+
+.input-validation .error-pwd {
+  border: 2px solid var(--danger);
+  margin-bottom: 0;
+}

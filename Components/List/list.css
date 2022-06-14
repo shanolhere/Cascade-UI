@@ -1,0 +1,103 @@
+/* default list styling */
+.list {
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem 0 0;
+  width: 15.6rem;
+}
+.list-title {
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid var(--black-light-shade);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.list li {
+  padding: 0.5rem 1rem;
+  letter-spacing: 1.4px;
+}
+.list li:hover {
+  cursor: pointer;
+  color: var(--primary-color-shade);
+}
+/* spaced list styling */
+.spaced-list {
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.spaced-list li {
+  padding: 0.5rem 1rem;
+  letter-spacing: 1.4px;
+}
+.spaced-list li:hover {
+  cursor: pointer;
+  color: var(--primary-color-shade);
+}
+/* stacked list styling */
+/* .stacked-list {
+} */
+.stacked-item {
+  margin: 10px;
+  background-color: var(--black-shade);
+  color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.stacked-item:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.stacked-text:hover {
+  color: var(--primary-color-shade);
+}
+.stacked-time {
+  padding: 0.8rem;
+  font-weight: 300;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* background-color: brown; */
+}
+@media screen and (max-width: 768px) {
+  .spaced-list {
+    padding: 0rem;
+    display: flex;
+    gap: 0rem;
+  }
+  .spaced-list li {
+    padding: 0.3rem;
+    letter-spacing: 1px;
+  }
+  .stacked-list {
+    width: 100%;
+    margin-left: -9rem;
+  }
+  .stacked-item {
+    margin: 10px;
+    width: 85vw;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+    /* background-color: aqua; */
+  }
+  .stacked-item h1 {
+    font-size: 4px;
+  }
+  .stacked-item p {
+    font-size: 12px;
+  }
+  .stacked-time {
+    display: flex;
+
+    align-items: center;
+    /* background-color: brown; */
+  }
+}

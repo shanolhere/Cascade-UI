@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image| Cascade UI</title>
+    <title>Modal | Cascade UI</title>
     <!-- css files -->
     <link href="/css/shared.css" rel="stylesheet" />
-    <link href="/Components/Image/image.css" rel="stylesheet" />
+    <link href="/Components/Button/button.css" rel="stylesheet">
+    <link href="/Components/Modal/modal.css" rel="stylesheet" />
+    
 
     <!-- highlight JS import -->
     <link
@@ -78,24 +80,24 @@
               <a href="/Components/card/card.html">Card</a>
             </li>
             <li>
-              <a class="active" href="/Components/image/image.html">Image</a>
+              <a href="/Components/image/image.html">Image</a>
             </li>
             <li>
-              <a href="/Components/input/input.html">Input</a>
+              <a  href="/Components/input/input.html">Input</a>
             </li>
             <li>
-              <a href="/Components/text-utilities/text-utilities.html"
+              <a  href="/Components/text-utilities/text-utilities.html"
                 >Text Utilities</a
               >
             </li>
             <li>
-              <a href="/Components/list/list.html">List</a>
+              <a  href="/Components/list/list.html">List</a>
             </li>
             <li>
               <a href="/Components/navigation/navigation.html">Navigation</a>
             </li>
             <li>
-              <a href="/Components/modal/modal.html">Modal</a>
+              <a class="active" href="/Components/modal/modal.html">Modal</a>
             </li>
             <li>
               <a href="/Components/rating/rating.html">Rating</a>
@@ -115,65 +117,57 @@
 
       <!-- Main content -->
       <div class="maindoc-content">
-        <h1 class="mb-1">Image</h1>
-        <p>
-            Images are crucial for displaying visual information on an application. In order to only use the Image Component from 
-            <span class="primary-color-shade bold">Cascade UI </span>in your project, copy and paste the below code in the head tag of your html document.
-        </p>
+        <h2 class="mb-1">Modal</h2>
+            <p>A dialog is a window overlaid on either the primary window or another dialog window. Content behind a modal dialog is inert, meaning that users cannot interact with it. In order to only use the Modal Component from
+                 <span class="primary-color semibold">Cascade UI</span> in your project, copy and paste the below code in the head tag of your html document.
         
         <div class="code-snippet">
             <pre>
                 <code class="language-html">
     &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/css/foundation.css" /&gt;
-    &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/Components/Image/image.css" /&gt;
+    &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/Components/Modal/modal.css" /&gt;
                 </code>
             </pre>
         </div>
     </p>
 
-        <!-----------------
-        Responsive Image
-        ------------------->
-        <h3 class="mb-1">Responsive Image</h3>
-        <p>Responsive images can be used by applying the class name <span class="primary-color semibold">img-responsive</span>. You can copy the html part from below code snippet.
-        </p>
-        <div class="comp-showroom comp-imagebox">
-            <img src="/assets/image.jpg" class="img-responsive">
+    <div class="comp-showroom">
+        <div class="modal">
+            <h3 class="modal-title">Remove Product
+                <button class="modal-icon"><i class="fas fa-times"></i></button>
+            </h3>
+            <div class="modal-content">
+                <p>Are you sure you want to remove this product from cart?</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-primary">Remove</button>
+                <button class="btn-primary btn-outline">Close</button>
+            </div>
         </div>
-        <div class="code-snippet">
-            <pre>
+    </div>
+
+    <div class="code-snippet">
+        <pre>
                 <code class="language-html component-code">
-                    &lt;img src="/assets/image.jpg" class="img-responsive"&gt;
                     
+                    &lt;div class="modal"&gt;
+                        &lt;h3 class="modal-title"&gt;Remove Product
+                            &lt;button class="modal-icon"&gt;&lt;i class="fas fa-times"&gt;&lt;/i&gt;&lt;/button&gt;
+                        &lt;/h3>
+                        &lt;div class="modal-content"&gt;
+                            &lt;p>Are you sure you want to remove this product from cart?&lt;/p&gt;
+                        &lt;/div>
+                        &lt;div class="modal-footer"&gt;
+                            &lt;button class="btn-primary"&gt;Remove&lt;/button&gt;
+                            &lt;button class="btn-primary btn-outline"&gt;Close&lt;/button&gt;
+                        &lt;/div>
+                    &lt;/div>
+                   
                 </code>
             </pre>
-        </div>
+    </div>
 
-        <!-----------------
-       Round Image
-        ------------------->
- 
-            <h3 class="mb-1">Round Image</h3>
-            <p>Round images can be used by applying the class name <span class="primary-color semibold">rounded-img</span>. You can
-                copy the html part from below code snippet.</p>
-
-            <div class="comp-showroom comp-imagebox">
-                <div class="img-container">
-                    <img src="/assets/image.jpg" class="rounded-img">
-                </div>
-            </div>
-
-            <div class="code-snippet">
-                <pre>
-                        <code class="language-html component-code">
-                            &lt;div class="img-container"&gt;
-                                &lt;img src="/assets/image.jpg" class="rounded-img"&gt;
-                            &lt;/div&gt;
-                        </code>
-                    </pre>
-            </div>
         
-
         
         <!-- footer content -->
         <footer class="semibold">
@@ -196,11 +190,11 @@
                 d="M15 6l-6 6l6 6"
               ></path>
             </svg>
-            <a href="/Components/Card/card.html">Card</a>
+            <a href="/Components/Navigation/navigation.html">Navigation</a>
           </div>
 
           <div class="next-comp">
-            <a href="/Components/Input/input.html">Input</a>
+            <a href="/Components/Rating/rating.html">Rating</a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"

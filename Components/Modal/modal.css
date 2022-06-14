@@ -1,0 +1,28 @@
+.modal {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--black-light-shade);
+}
+.modal-title {
+  position: relative;
+}
+.modal-icon {
+  border: none;
+  background-color: white;
+  position: absolute;
+  right: 1%;
+  border-radius: 50%;
+}
+.modal-icon:hover {
+  background-color: var(--off-white);
+  cursor: pointer;
+}
+.modal-content {
+  margin: 1rem 0;
+}
+.modal-footer {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}

@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image| Cascade UI</title>
+    <title>Grid | Cascade UI</title>
     <!-- css files -->
     <link href="/css/shared.css" rel="stylesheet" />
-    <link href="/Components/Image/image.css" rel="stylesheet" />
+    
+    <link href="/Components/Grid/grid.css" rel="stylesheet" />
+    
 
     <!-- highlight JS import -->
     <link
@@ -63,13 +65,13 @@
           </div>
           <ul class="list-sub-heading">
             <li>
-              <a  href="/Components/avatar/avatar.html">Avatar</a>
+              <a href="/Components/avatar/avatar.html">Avatar</a>
             </li>
             <li>
               <a href="/Components/alert/alert.html">Alert</a>
             </li>
             <li>
-              <a  href="/Components/badge/badge.html">Badge</a>
+              <a href="/Components/badge/badge.html">Badge</a>
             </li>
             <li>
               <a href="/Components/button/button.html">Button</a>
@@ -78,7 +80,7 @@
               <a href="/Components/card/card.html">Card</a>
             </li>
             <li>
-              <a class="active" href="/Components/image/image.html">Image</a>
+              <a href="/Components/image/image.html">Image</a>
             </li>
             <li>
               <a href="/Components/input/input.html">Input</a>
@@ -104,7 +106,7 @@
               <a href="/Components/toast/toast.html">Toast</a>
             </li>
             <li>
-              <a href="/Components/grid/grid.html">Simplified Grid</a>
+              <a class="active" href="/Components/grid/grid.html">Simplified Grid</a>
             </li>
             <li>
               <a href="/Components/slider/slider.html">Slider</a>
@@ -115,65 +117,69 @@
 
       <!-- Main content -->
       <div class="maindoc-content">
-        <h1 class="mb-1">Image</h1>
-        <p>
-            Images are crucial for displaying visual information on an application. In order to only use the Image Component from 
-            <span class="primary-color-shade bold">Cascade UI </span>in your project, copy and paste the below code in the head tag of your html document.
-        </p>
+        <h2 class="mb-1">Grid</h2>
+            <p>Grid is a versatile layout to make different sections on a webpage. For now, there are three grid layouts available: two, three & four column layouts. In order to only use the Grid Component from   
+                 <span class="primary-color semibold">Cascade UI</span> in your project, copy and paste the below code in the head tag of your html document.
         
         <div class="code-snippet">
             <pre>
                 <code class="language-html">
     &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/css/foundation.css" /&gt;
-    &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/Components/Image/image.css" /&gt;
+    &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/Components/Grid/grid.css" /&gt;
                 </code>
             </pre>
         </div>
     </p>
 
-        <!-----------------
-        Responsive Image
-        ------------------->
-        <h3 class="mb-1">Responsive Image</h3>
-        <p>Responsive images can be used by applying the class name <span class="primary-color semibold">img-responsive</span>. You can copy the html part from below code snippet.
-        </p>
-        <div class="comp-showroom comp-imagebox">
-            <img src="/assets/image.jpg" class="img-responsive">
+    <!-- simplified Grid -->
+        
+    <h3 class="mb-1">Simplified Grid</h3>
+    <p>To use the Simplified Grid you just need to add class name <span class="primary-color semibold">grid</span> to the container or parent element, followed by varient name: <span class="primary-color semibold">one-col, two-col, three-col, or four-col</span> (eg. class="grid three-col"). You can copy the html part from below code snippet and remove all other classes given for showcasing the usage.</p>
+
+    <div class="comp-gridbox">
+        <div class="grid one-col bg-light-yellow-color">
+            <div class="p-xs border-black">Child 1</div> 
         </div>
-        <div class="code-snippet">
-            <pre>
+        <div class="grid two-col bg-light-green-color">
+            <div class="p-xs border-black">Child 1</div>
+            <div class="p-xs border-black">Child 2</div>
+        </div>
+        <div class="grid three-col bg-light-red-color">
+            <div class="p-xs border-black">Child 1</div>
+            <div class="p-xs border-black">Child 2</div>
+            <div class="p-xs border-black">Child 3</div>
+        </div>
+        <div class="grid four-col bg-light-blue-color">
+            <div class="p-xs border-black">Child 1</div>
+            <div class="p-xs border-black">Child 2</div>
+            <div class="p-xs border-black">Child 3</div>
+            <div class="p-xs border-black">Child 4</div>
+        </div>
+    </div>
+    <div class="code-snippet">
+        <pre>
                 <code class="language-html component-code">
-                    &lt;img src="/assets/image.jpg" class="img-responsive"&gt;
-                    
+                    &lt;div class="grid one-col bg-ligth-yellow-color"&gt;
+                        &lt;div class="p-xs border-black"&gt;Child 1&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="grid two-col bg-ligth-green-color"&gt;
+                        &lt;div class="p-xs border-black"&gt;Child 1&lt;/div&gt;
+                        &lt;div class="p-xs border-black"&gt;Child 2&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="grid three-col bg-ligth-red-color"&gt;
+                        &lt;div class="p-xs border-black"&gt;Child 1&lt;/div&gt;
+                        &lt;div class="p-xs border-black"&gt;Child 2&lt;/div&gt;
+                        &lt;div class="p-xs border-black"&gt;Child 3&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="grid four-col bg-ligth-blue-color"&gt;
+                        &lt;div class="p-xs border-black"&gt;Child 1&lt;/div&gt;
+                        &lt;div class="p-xs border-black"&gt;Child 2&lt;/div&gt;
+                        &lt;div class="p-xs border-black"&gt;Child 3&lt;/div&gt;
+                        &lt;div class="p-xs border-black"&gt;Child 4&lt;/div&gt;
+                    &lt;/div&gt;
                 </code>
             </pre>
-        </div>
-
-        <!-----------------
-       Round Image
-        ------------------->
- 
-            <h3 class="mb-1">Round Image</h3>
-            <p>Round images can be used by applying the class name <span class="primary-color semibold">rounded-img</span>. You can
-                copy the html part from below code snippet.</p>
-
-            <div class="comp-showroom comp-imagebox">
-                <div class="img-container">
-                    <img src="/assets/image.jpg" class="rounded-img">
-                </div>
-            </div>
-
-            <div class="code-snippet">
-                <pre>
-                        <code class="language-html component-code">
-                            &lt;div class="img-container"&gt;
-                                &lt;img src="/assets/image.jpg" class="rounded-img"&gt;
-                            &lt;/div&gt;
-                        </code>
-                    </pre>
-            </div>
-        
-
+    </div>
         
         <!-- footer content -->
         <footer class="semibold">
@@ -196,11 +202,11 @@
                 d="M15 6l-6 6l6 6"
               ></path>
             </svg>
-            <a href="/Components/Card/card.html">Card</a>
+            <a href="/Components/Toast/toast.html">Toast</a>
           </div>
 
           <div class="next-comp">
-            <a href="/Components/Input/input.html">Input</a>
+            <a href="/Components/Slider/slider.html">Slider</a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"

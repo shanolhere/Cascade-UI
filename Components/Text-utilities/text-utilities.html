@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image| Cascade UI</title>
+    <title>Text Utilities | Cascade UI</title>
     <!-- css files -->
     <link href="/css/shared.css" rel="stylesheet" />
-    <link href="/Components/Image/image.css" rel="stylesheet" />
+    <link href="/Components/Text-utilities/text-utilities.css" rel="stylesheet" />
 
     <!-- highlight JS import -->
     <link
@@ -78,13 +78,13 @@
               <a href="/Components/card/card.html">Card</a>
             </li>
             <li>
-              <a class="active" href="/Components/image/image.html">Image</a>
+              <a href="/Components/image/image.html">Image</a>
             </li>
             <li>
-              <a href="/Components/input/input.html">Input</a>
+              <a  href="/Components/input/input.html">Input</a>
             </li>
             <li>
-              <a href="/Components/text-utilities/text-utilities.html"
+              <a class="active" href="/Components/text-utilities/text-utilities.html"
                 >Text Utilities</a
               >
             </li>
@@ -115,9 +115,9 @@
 
       <!-- Main content -->
       <div class="maindoc-content">
-        <h1 class="mb-1">Image</h1>
+        <h1 class="mb-1">Text Utilities</h1>
         <p>
-            Images are crucial for displaying visual information on an application. In order to only use the Image Component from 
+            Various styles and sizes of text can be created according to their respective class names. In order to only use the Text Utilities from 
             <span class="primary-color-shade bold">Cascade UI </span>in your project, copy and paste the below code in the head tag of your html document.
         </p>
         
@@ -125,54 +125,77 @@
             <pre>
                 <code class="language-html">
     &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/css/foundation.css" /&gt;
-    &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/Components/Image/image.css" /&gt;
+    &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/Components/text-utilities/text-utilities.css" /&gt;
                 </code>
             </pre>
         </div>
     </p>
 
         <!-----------------
-        Responsive Image
+        Text Utilities
         ------------------->
-        <h3 class="mb-1">Responsive Image</h3>
-        <p>Responsive images can be used by applying the class name <span class="primary-color semibold">img-responsive</span>. You can copy the html part from below code snippet.
-        </p>
-        <div class="comp-showroom comp-imagebox">
-            <img src="/assets/image.jpg" class="img-responsive">
-        </div>
-        <div class="code-snippet">
-            <pre>
-                <code class="language-html component-code">
-                    &lt;img src="/assets/image.jpg" class="img-responsive"&gt;
-                    
-                </code>
-            </pre>
-        </div>
-
-        <!-----------------
-       Round Image
-        ------------------->
- 
-            <h3 class="mb-1">Round Image</h3>
-            <p>Round images can be used by applying the class name <span class="primary-color semibold">rounded-img</span>. You can
-                copy the html part from below code snippet.</p>
-
-            <div class="comp-showroom comp-imagebox">
-                <div class="img-container">
-                    <img src="/assets/image.jpg" class="rounded-img">
-                </div>
-            </div>
-
-            <div class="code-snippet">
-                <pre>
-                        <code class="language-html component-code">
-                            &lt;div class="img-container"&gt;
-                                &lt;img src="/assets/image.jpg" class="rounded-img"&gt;
-                            &lt;/div&gt;
-                        </code>
-                    </pre>
-            </div>
         
+       <!-- text variations -->
+
+       <div class="comp-showroom comp-textbox">
+        <div class="t3">Very Large Text</div>
+        <div class="t2">Large Text</div>
+        <div class="t1p5">Medium Text</div>
+        <div class="t1">Normal Text</div>
+        <div class="t0p75">Small Text</div>
+        <div class="t0p5">Very small text</div>
+        <br />
+        <h1 class="h1">Heading 1</h1>
+        <h2 class="h2">Heading 2</h2>
+        <h3 class="h3">Heading 3</h3>
+        <br />
+        <div class="gray-color">Gray Text</div>
+        <div class="text-strike">Text strike</div>
+        <br />
+        <div class="t1p5 light">Light Weight</div>
+        <div class="t1p5 regular">Regular Weight</div>
+        <div class="t1p5 lightbold">Medium Weight</div>
+        <div class="t1p5 semibold">Semibold Weight</div>
+        <div class="t1p5 bold">Bold Weight</div>
+        <br />
+        <div class="text-left">Left Text</div>
+        <div class="text-center">Centered Text</div>
+        <div class="text-right">RightText</div>
+      </div>
+
+      <div class="code-snippet">
+        <pre>
+                  <code class="language-html component-code">
+              &lt;!-- Rubik Font Family @credits - Google(https://fonts.google.com/) --&gt;
+
+              &lt;!-- @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap'); --&gt;
+
+              &lt;div class="t3"&gt;Very Large Text&lt;/div&gt;
+              &lt;div class="t2"&gt;Large Text&lt;/div&gt;
+              &lt;div class="t1p5"&gt;Medium Text&lt;/div&gt;
+              &lt;div class="t1"&gt;Normal Text&lt;/div&gt;
+              &lt;div class="t0p75"&gt;Small Text&lt;/div&gt;
+              &lt;div class="t0p5"&gt;Very small text&lt;/div&gt;
+              
+              &lt;h1 class="h1"&gt;Heading 1&lt;/h1&gt;
+              &lt;h2 class="h2"&gt;Heading 2&lt;/h2&gt;
+              &lt;h3 class="h3"&gt;Heading 3&lt;/h3&gt;
+              
+              &lt;div class="gray-color"&gt;Gray Text&lt;/div&gt;
+              &lt;div class="text-strike"&gt;Text Strike&lt;/div&gt;
+
+              &lt;div class="t1p5 light"&gt;Light Weight&lt;/div&gt;
+              &lt;div class="t1p5 regular"&gt;Regular Weight&lt;/div&gt;
+              &lt;div class="t1p5 lightbold"&gt;Medium Weight&lt;/div&gt;
+              &lt;div class="t1p5 semibold"&gt;Semibold Weight&lt;/div&gt;
+              &lt;div class="t1p5 bold"&gt;Bold Weight&lt;/div&gt;
+              
+              &lt;div class="text-left"&gt;Left Text&lt;/div&gt;
+              &lt;div class="text-center"&gt;Centered Text&lt;/div&gt;
+              &lt;div class="text-right"&gt;Right Text&lt;/div&gt;
+                  </code>
+              </pre>
+      </div>
 
         
         <!-- footer content -->
@@ -196,11 +219,11 @@
                 d="M15 6l-6 6l6 6"
               ></path>
             </svg>
-            <a href="/Components/Card/card.html">Card</a>
+            <a href="/Components/Input/input.html">Input</a>
           </div>
 
           <div class="next-comp">
-            <a href="/Components/Input/input.html">Input</a>
+            <a href="/Components/List/list.html">List</a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"

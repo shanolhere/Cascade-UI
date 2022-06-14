@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List | Cascade UI</title>
+    <!-- css files -->
+    <link href="/css/shared.css" rel="stylesheet" />
+    <link href="/Components/List/list.css" rel="stylesheet" />
+    <link href="/Components/Avatar/avatar.css" rel="stylesheet" />
+
+    <!-- highlight JS import -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+    />
+
+    <!-- Font awesome icons import -->
+    <script
+      src="https://kit.fontawesome.com/21124ac8ea.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="main-nav">
+      <a class="logo td-none" href="/index.html">Cascade UI</a>
+      <ul class="social-links list-non-bullet nav-btn">
+        <li class="list-item">
+          <a href="" class="link"><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li class="list-item">
+          <a href="" class="link"><i class="fab fa-github"></i></a>
+        </li>
+        <li class="list-item">
+          <a href="" class="link"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- documentation container -->
+
+    <div class="doc-container">
+      <!-- sidebar -->
+      <aside class="sidebar">
+        <!-- get started sidebar -->
+        <div class="nested-list">
+          <div class="list-heading">
+            <a href="">Get Started</a>
+          </div>
+          <ul class="list-sub-heading">
+            <li><a href="/documentation/introduction.html">Introduction</a></li>
+            <li><a href="/documentation/colors.html">Colors</a></li>
+            <li>
+              <a href="/documentation/typography.html">Typography</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Components sidebar -->
+        <div class="nested-list">
+          <div class="list-heading">
+            <a href="">Components</a>
+          </div>
+          <ul class="list-sub-heading">
+            <li>
+              <a  href="/Components/avatar/avatar.html">Avatar</a>
+            </li>
+            <li>
+              <a href="/Components/alert/alert.html">Alert</a>
+            </li>
+            <li>
+              <a  href="/Components/badge/badge.html">Badge</a>
+            </li>
+            <li>
+              <a href="/Components/button/button.html">Button</a>
+            </li>
+            <li>
+              <a href="/Components/card/card.html">Card</a>
+            </li>
+            <li>
+              <a href="/Components/image/image.html">Image</a>
+            </li>
+            <li>
+              <a  href="/Components/input/input.html">Input</a>
+            </li>
+            <li>
+              <a  href="/Components/text-utilities/text-utilities.html"
+                >Text Utilities</a
+              >
+            </li>
+            <li>
+              <a class="active" href="/Components/list/list.html">List</a>
+            </li>
+            <li>
+              <a href="/Components/navigation/navigation.html">Navigation</a>
+            </li>
+            <li>
+              <a href="/Components/modal/modal.html">Modal</a>
+            </li>
+            <li>
+              <a href="/Components/rating/rating.html">Rating</a>
+            </li>
+            <li>
+              <a href="/Components/toast/toast.html">Toast</a>
+            </li>
+            <li>
+              <a href="/Components/grid/grid.html">Simplified Grid</a>
+            </li>
+            <li>
+              <a href="/Components/slider/slider.html">Slider</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Main content -->
+      <div class="maindoc-content">
+        <h1 class="mb-1">List</h1>
+        <p>
+            Sequential information can be easily conveyed through lists. Lists are continuous, vertical indexes of text. In order to only use the List Component from  
+            <span class="primary-color-shade bold">Cascade UI </span>in your project, copy and paste the below code in the head tag of your html document.
+        </p>
+        
+        <div class="code-snippet">
+            <pre>
+                <code class="language-html">
+    &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/css/foundation.css" /&gt;
+    &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/Components/List/list.css" /&gt;
+                </code>
+            </pre>
+        </div>
+    </p>
+
+        <!-----------------
+        Default List
+        ------------------->
+        <h3 class="mb-1">Default List</h3>
+        <p>To use this you just need to add class name <span class="primary-color semibold">list</span> to your <span class="primary-color semibold">&lt;ul&gt; tag</span>
+                (eg. &lt;ul class="list"&gt;).
+                You can copy the html part from below code snippet.</p>
+
+        <div class="comp-showroom">
+                <ul class="list">
+                    <div class="list-title">Categories</div>
+                    <li>Home</li>
+                    <li>Brands</li>
+                    <li>Clothing</li>
+                    <li>Accessories</li>
+                </ul>
+        </div>
+
+        <div class="code-snippet">
+                <pre>
+                        <code class="language-html component-code">
+                            &lt;ul class="list"&gt;
+                                &lt;div class="list-title"&gt;Categories&lt;/div&gt;
+                                &lt;li&gt;Home&lt;/li&gt;
+                                &lt;li&gt;Brands&lt;/li&gt;
+                                &lt;li&gt;Clothing&lt;/li&gt;
+                                &lt;li&gt;Accessories&lt;/li&gt;
+                            &lt;/ul&gt;
+                        </code>
+                    </pre>
+        </div>
+
+        <!-----------------
+                Spaced List
+            ------------------->
+            <h3 class="mb-1">Spaced List</h3>
+            <p>To use this you just need to add class name <span class="primary-color semibold">spaced-list</span> to your <span class="primary-color semibold">&lt;ul&gt; tag</span>
+                (eg. &lt;ul class="spaced-list"&gt;).
+                You can copy the html part from below code snippet.</p>
+
+            <div class="comp-showroom">
+                <ul class="spaced-list">
+                    <li>Home</li>
+                    <li>Brands</li>
+                    <li>Clothing</li>
+                    <li>Accessories</li>
+                </ul>
+            </div>
+
+            <div class="code-snippet">
+                <pre>
+                        <code class="language-html component-code">
+                            &lt;ul class="spaced-list"&gt;
+                                &lt;li&gt;Home&lt;/li&gt;
+                                &lt;li&gt;Brands&lt;/li&gt;
+                                &lt;li&gt;Clothing&lt;/li&gt;
+                                &lt;li&gt;Accessories&lt;/li&gt;
+                            &lt;/ul&gt;
+                        </code>
+                    </pre>
+            </div>
+        <!-----------------
+                Stacked List
+            ------------------->
+            <h3 class="mb-1">Stacked List</h3>
+            <p>Stacked lists may have images , header and additional info as well they are mostly used in notifications. To use this you just need to add class name <span class="primary-color semibold">stacked-list</span> to your <span class="primary-color semibold">&lt;ul&gt; tag</span>
+                    (eg. &lt;ul class="stacked-list"&gt;).
+                    You can copy the html part from below code snippet.</p>
+
+            <div class="comp-showroom">
+                <ul class="stacked-list">
+                    <li class="stacked-item">
+                        <div class="avatar">
+                            <img class="rounded-avatar" src="/assets/avatar-female1.jpg">
+                        </div>
+                        <div class="stacked-text">
+                            <h3>Shanolhere | CascadeUI.IG</h3>
+                            <p>Someone liked your post!</p>
+                        </div>
+                        <div class="stacked-time">
+                            <span>22mins ago</span>
+                        </div>
+                    </li>
+                    <li class="stacked-item">
+                        <div class="avatar">
+                            <img class="rounded-avatar" src="/assets/avatar-female2.jpg">
+                        </div>
+                        <div class="stacked-text">
+                            <h3>Sabhere | CascadeUI.onMoj</h3>
+                            <p> CascadeUI Moz channel!</p>
+                        </div>
+                        <div class="stacked-time">
+                            <span>2hrs ago</span>
+                        </div>
+                    </li>
+                    <li class="stacked-item">
+                        <div class="avatar">
+                            <img class="rounded-avatar" src="/assets/avatar-male1.jpg">
+                        </div>
+                        <div class="stacked-text">
+                            <h3>CascadeUI | CascadeShorts</h3>
+                            <p>Shorts of CascadeUI!</p>
+                        </div>
+                        <div class="stacked-time">
+                            <span>22hrs ago</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="code-snippet">
+                <pre>
+                        <code class="language-html component-code">
+                            &lt;ul class="stacked-list"&gt;
+                                &lt;li class="stacked-item"&gt;
+                                    &lt;div class="avatar"&gt;
+                                        &lt;img class="rounded-avatar" src="/assets/avatar-female1.jpg"&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="stacked-text"&gt;
+                                        &lt;h3&gt;Shanolhere | CascadeUI.IG&lt;/h3&gt;
+                                        &lt;p&gt;Someone liked your post!&lt;/p&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="stacked-time"&gt;
+                                        &lt;span&gt;22mins ago&lt;/span&gt;
+                                    &lt;/div&gt;
+                                &lt;/li&gt;
+                                &lt;li class="stacked-item"&gt;
+                                    &lt;div class="avatar"&gt;
+                                        &lt;img class="rounded-avatar" src="/assets/avatar-female2.jpg"&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="stacked-text"&gt;
+                                        &lt;h3&gt;Sabhere | CascadeUI.onMoj&lt;/h3&gt;
+                                        &lt;p&gt; CascadeUI Moz channel!&lt;/p&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="stacked-time"&gt;
+                                        &lt;span&gt;2hrs ago&lt;/span&gt;
+                                    &lt;/div&gt;
+                                &lt;/li&gt;
+                                &lt;li class="stacked-item"&gt;
+                                    &lt;div class="avatar"&gt;
+                                        &lt;img class="rounded-avatar" src="/assets/avatar-male1.jpg"&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="stacked-text"&gt;
+                                        &lt;h3&gt;CascadeUI | CascadeShorts&lt;/h3&gt;
+                                        &lt;p&gt;Shorts of CascadeUI!&lt;/p&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="stacked-time"&gt;
+                                        &lt;span&gt;22hrs ago&lt;/span&gt;
+                                    &lt;/div&gt;
+                                &lt;/li&gt;
+                            &lt;/ul&gt;
+                        </code>
+                    </pre>
+            </div>
+        
+        <!-- footer content -->
+        <footer class="semibold">
+          <div class="prev-comp">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--grommet-icons"
+              width="1em"
+              height="1em"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                d="M15 6l-6 6l6 6"
+              ></path>
+            </svg>
+            <a href="/Components/Text-utilities/text-utilities.html">Text Utilities</a>
+          </div>
+
+          <div class="next-comp">
+            <a href="/Components/Navigation/navigation.html">Navigation</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--ic"
+              width="1em"
+              height="1em"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

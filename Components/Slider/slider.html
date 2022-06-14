@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image| Cascade UI</title>
+    <title>Slider | Cascade UI</title>
     <!-- css files -->
     <link href="/css/shared.css" rel="stylesheet" />
-    <link href="/Components/Image/image.css" rel="stylesheet" />
+    
+    <link href="/Components/Slider/slider.css" rel="stylesheet" />
+    
 
     <!-- highlight JS import -->
     <link
@@ -63,13 +65,13 @@
           </div>
           <ul class="list-sub-heading">
             <li>
-              <a  href="/Components/avatar/avatar.html">Avatar</a>
+              <a href="/Components/avatar/avatar.html">Avatar</a>
             </li>
             <li>
               <a href="/Components/alert/alert.html">Alert</a>
             </li>
             <li>
-              <a  href="/Components/badge/badge.html">Badge</a>
+              <a href="/Components/badge/badge.html">Badge</a>
             </li>
             <li>
               <a href="/Components/button/button.html">Button</a>
@@ -78,7 +80,7 @@
               <a href="/Components/card/card.html">Card</a>
             </li>
             <li>
-              <a class="active" href="/Components/image/image.html">Image</a>
+              <a href="/Components/image/image.html">Image</a>
             </li>
             <li>
               <a href="/Components/input/input.html">Input</a>
@@ -107,7 +109,7 @@
               <a href="/Components/grid/grid.html">Simplified Grid</a>
             </li>
             <li>
-              <a href="/Components/slider/slider.html">Slider</a>
+              <a class="active" href="/Components/slider/slider.html">Slider</a>
             </li>
           </ul>
         </div>
@@ -115,64 +117,64 @@
 
       <!-- Main content -->
       <div class="maindoc-content">
-        <h1 class="mb-1">Image</h1>
-        <p>
-            Images are crucial for displaying visual information on an application. In order to only use the Image Component from 
-            <span class="primary-color-shade bold">Cascade UI </span>in your project, copy and paste the below code in the head tag of your html document.
-        </p>
+        <h2 class="mb-1">Slider</h2>
+            <p>Slider component is used to allow users to make selections from a range of values. It is ideal for adjusting settings such as volume, brightness, or price on shopping sites. In order to only use the Slider Component from    
+                 <span class="primary-color semibold">Cascade UI</span> in your project, copy and paste the below code in the head tag of your html document.
         
         <div class="code-snippet">
             <pre>
                 <code class="language-html">
     &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/css/foundation.css" /&gt;
-    &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/Components/Image/image.css" /&gt;
+    &lt;link rel="stylesheet" href="https://cascadeUI.netlify.app/Components/Slider/slider.css" /&gt;
                 </code>
             </pre>
         </div>
     </p>
 
-        <!-----------------
-        Responsive Image
-        ------------------->
-        <h3 class="mb-1">Responsive Image</h3>
-        <p>Responsive images can be used by applying the class name <span class="primary-color semibold">img-responsive</span>. You can copy the html part from below code snippet.
-        </p>
-        <div class="comp-showroom comp-imagebox">
-            <img src="/assets/image.jpg" class="img-responsive">
+    <div class="comp-showroom">
+        <div class="slider-container">
+            <label for="range" class="lightbold"> Slider: </label>
+            <input class="slider" list="slider-range" type="range" name="range" id="range" min="0" max="100" value="30">
+            <datalist id="slider-range"> 
+                <option value="0"></option> 
+                <option value="10"></option> 
+                <option value="20"></option> 
+                <option value="30"></option> 
+                <option value="40"></option> 
+                <option value="50"></option> 
+                <option value="60"></option> 
+                <option value="70"></option> 
+                <option value="80"></option> 
+                <option value="90"></option> 
+                <option value="100"></option> 
+            </datalist>
         </div>
-        <div class="code-snippet">
-            <pre>
-                <code class="language-html component-code">
-                    &lt;img src="/assets/image.jpg" class="img-responsive"&gt;
-                    
+    </div>
+
+    <div class="code-snippet">
+        <pre>
+                <code class="language-html component-coder">
+                        &lt;div class="slider-container"&gt;
+                            &lt;label for="range" class="lightbold"&gt; Slider: &lt;/label&gt;
+                            &lt;input class="slider" list="slider-range" type="range" 
+                            name="range" id="range" min="0" max="100" value="30"&gt;
+                            &lt;datalist id="slider-range"&gt; 
+                                &lt;option value="0"&gt;&lt;/option&gt; 
+                                &lt;option value="10"&gt;&lt;/option&gt; 
+                                &lt;option value="20"&gt;&lt;/option&gt; 
+                                &lt;option value="30"&gt;&lt;/option&gt; 
+                                &lt;option value="40"&gt;&lt;/option&gt; 
+                                &lt;option value="50"&gt;&lt;/option&gt; 
+                                &lt;option value="60"&gt;&lt;/option&gt; 
+                                &lt;option value="70"&gt;&lt;/option&gt; 
+                                &lt;option value="80"&gt;&lt;/option&gt; 
+                                &lt;option value="90"&gt;&lt;/option&gt; 
+                                &lt;option value="100"&gt;&lt;/option&gt; 
+                            &lt;/datalist&gt;
+                        &lt;/div&gt;
                 </code>
             </pre>
-        </div>
-
-        <!-----------------
-       Round Image
-        ------------------->
- 
-            <h3 class="mb-1">Round Image</h3>
-            <p>Round images can be used by applying the class name <span class="primary-color semibold">rounded-img</span>. You can
-                copy the html part from below code snippet.</p>
-
-            <div class="comp-showroom comp-imagebox">
-                <div class="img-container">
-                    <img src="/assets/image.jpg" class="rounded-img">
-                </div>
-            </div>
-
-            <div class="code-snippet">
-                <pre>
-                        <code class="language-html component-code">
-                            &lt;div class="img-container"&gt;
-                                &lt;img src="/assets/image.jpg" class="rounded-img"&gt;
-                            &lt;/div&gt;
-                        </code>
-                    </pre>
-            </div>
-        
+    </div>
 
         
         <!-- footer content -->
@@ -196,11 +198,11 @@
                 d="M15 6l-6 6l6 6"
               ></path>
             </svg>
-            <a href="/Components/Card/card.html">Card</a>
+            <a href="/Components/Grid/grid.html">Simplified Grid</a>
           </div>
 
-          <div class="next-comp">
-            <a href="/Components/Input/input.html">Input</a>
+          <div class="next-comp disabled">
+            <a href="" disabled>Next</a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"

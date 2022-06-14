@@ -1,0 +1,17 @@
+.slider-container {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  background-color: var(--black-light-shade);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+input[type="range"] {
+  accent-color: var(--primary-color);
+  width: 20rem;
+  border-radius: 10px;
+  height: 8px;
+}

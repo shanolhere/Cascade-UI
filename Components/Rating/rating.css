@@ -1,0 +1,23 @@
+.rating {
+  background-color: white;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.rating-fill {
+  color: var(--primary-color);
+}
+
+.rating-half {
+  color: var(--primary-color);
+}
+
+.rating-badge {
+  border-radius: 3px;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem;
+}

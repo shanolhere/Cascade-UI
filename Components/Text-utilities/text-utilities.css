@@ -1,0 +1,115 @@
+/* ||| Typography */
+
+/* Heading */
+
+h1,
+.h1 {
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+h2,
+.h2 {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h4,
+.h4 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+h5,
+.h5 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+/* paragraphs styling */
+p {
+  line-height: 1.6rem;
+  letter-spacing: 0.9px;
+  font-weight: 500;
+}
+
+/* Text */
+.t3 {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+.t2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.t1p5 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.t1p2 {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+.t1 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.t0p75 {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.t0p5 {
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
+
+.text-strike {
+  text-decoration: line-through;
+}
+
+/* Font Weight */
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.lightbold {
+  font-weight: 500;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* Text Align */
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.gray-color {
+  color: var(--gray);
+}

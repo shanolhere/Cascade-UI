@@ -1,0 +1,16 @@
+.grid {
+  display: grid;
+  text-align: center;
+}
+.two-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+.three-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+.four-col {
+  grid-template-columns: repeat(4, 1fr);
+}
+.one-col {
+  grid-template-columns: repeat(1, 1fr);
+}
